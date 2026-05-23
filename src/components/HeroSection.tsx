@@ -21,7 +21,7 @@ export const HeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative h-screen flex flex-col justify-between overflow-hidden bg-[#0C0C0C] w-full">
+    <section className="relative h-screen flex flex-col justify-between overflow-hidden bg-white w-full">
       {/* Interactive Sparkles Background */}
       <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
         <SparklesCore
@@ -31,7 +31,7 @@ export const HeroSection: React.FC = () => {
           maxSize={1.2}
           particleDensity={80}
           className="w-full h-full"
-          particleColor="#FFFFFF"
+          particleColor="#c084fc"
           speed={0.4}
         />
       </div>
@@ -43,7 +43,7 @@ export const HeroSection: React.FC = () => {
               key={link.name}
               href={link.href}
               onClick={(e) => handleScrollTo(e, link.href)}
-              className="text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:opacity-70 transition-opacity duration-200"
+              className="text-[#0C0C0C] font-semibold uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:text-[#c084fc] transition-colors duration-200"
             >
               {link.name}
             </a>
@@ -88,7 +88,7 @@ export const HeroSection: React.FC = () => {
       <div className="px-6 md:px-10 pb-7 sm:pb-8 md:pb-10 flex justify-between items-end z-20 w-full">
         <FadeIn delay={0.35} y={20}>
           <p
-            className="text-[#D7E2EA] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px]"
+            className="text-[#0C0C0C] font-light uppercase tracking-wide leading-snug max-w-[160px] sm:max-w-[220px] md:max-w-[260px]"
             style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
           >
             a 3d creator driven by crafting striking and unforgettable projects

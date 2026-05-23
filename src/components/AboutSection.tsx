@@ -7,7 +7,7 @@ export const AboutSection: React.FC = () => {
   return (
     <section
       id="about"
-      className="relative min-h-screen w-full bg-[#0C0C0C] px-5 sm:px-8 md:px-10 py-20 flex flex-col justify-center items-center text-center overflow-hidden"
+      className="relative min-h-screen w-full bg-white px-5 sm:px-8 md:px-10 py-20 flex flex-col justify-center items-center text-center overflow-hidden"
     >
       {/* Decorative 3D corner images absolutely positioned */}
       {/* Top-Left: Moon icon */}
@@ -90,7 +90,7 @@ export const AboutSection: React.FC = () => {
         <div className="mt-10 sm:mt-14 md:mt-16 max-w-[560px]">
           <AnimatedText
             text="Passionate about design, development, and user experience, I create websites and platforms that combine creativity with functionality. From education platforms to modern web experiences, I love turning ideas into reality."
-            className="text-[#D7E2EA] font-medium text-center leading-relaxed"
+            className="text-[#0C0C0C] font-medium text-center leading-relaxed"
             style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)' } as any}
           />
         </div>

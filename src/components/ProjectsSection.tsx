@@ -64,22 +64,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
     >
       <motion.div
         style={{ scale }}
-        className="w-full rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col justify-between overflow-hidden shadow-[0_-20px_50px_rgba(0,0,0,0.8)]"
+        className="w-full rounded-[40px] sm:rounded-[50px] md:rounded-[60px] border border-sky-100 bg-[#F3F8FC] p-4 sm:p-6 md:p-8 flex flex-col justify-between overflow-hidden shadow-[0_-15px_40px_rgba(14,165,233,0.06)]"
       >
         {/* Top Metadata Row */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-[#D7E2EA]/15 pb-6">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-slate-200 pb-6">
           <div className="flex items-center gap-4 sm:gap-6">
             <span
-              className="font-black text-[#D7E2EA] leading-none"
+              className="font-black text-[#0C0C0C] leading-none"
               style={{ fontSize: 'clamp(2rem, 6vw, 5rem)' }}
             >
               {project.num}
             </span>
             <div className="flex flex-col text-left">
-              <span className="text-[#D7E2EA]/50 uppercase tracking-widest text-xs sm:text-sm">
+              <span className="text-[#0C0C0C]/50 uppercase tracking-widest text-xs sm:text-sm">
                 {project.category}
               </span>
-              <h3 className="text-[#D7E2EA] font-semibold text-lg sm:text-2xl uppercase tracking-wide">
+              <h3 className="text-[#0C0C0C] font-semibold text-lg sm:text-2xl uppercase tracking-wide">
                 {project.name}
               </h3>
             </div>
@@ -128,7 +128,7 @@ export const ProjectsSection: React.FC = () => {
   return (
     <section
       id="projects"
-      className="bg-[#0C0C0C] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 pb-32 -mt-10 sm:-mt-12 md:-mt-14 relative z-30 pt-20"
+      className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 pb-32 -mt-10 sm:-mt-12 md:-mt-14 relative z-30 pt-20 border-t border-slate-100"
     >
       <div className="w-full max-w-5xl mx-auto flex flex-col items-center">
         {/* Section Heading */}
