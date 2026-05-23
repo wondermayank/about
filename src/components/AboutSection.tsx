@@ -19,7 +19,7 @@ export const AboutSection: React.FC = () => {
         className="absolute top-[4%] left-[1%] sm:left-[2%] md:left-[4%] w-[120px] sm:w-[160px] md:w-[210px] z-10 pointer-events-none select-none"
       >
         <img
-          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/moon_icon.11395d36.png"
+          src="https://cdn-icons-png.flaticon.com/512/2620/2620348.png"
           alt="3D Moon Icon"
           className="w-full h-auto object-contain"
           draggable="false"
@@ -51,7 +51,7 @@ export const AboutSection: React.FC = () => {
         className="absolute top-[4%] right-[1%] sm:right-[2%] md:right-[4%] w-[120px] sm:w-[160px] md:w-[210px] z-10 pointer-events-none select-none"
       >
         <img
-          src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/lego_icon-1.703bb594.png"
+          src="https://static.vecteezy.com/system/resources/thumbnails/060/675/826/small/serene-artistic-atom-nucleus-and-electron-cloud-transparent-element-authentic-png.png"
           alt="3D Lego Icon"
           className="w-full h-auto object-contain"
           draggable="false"
@@ -89,7 +89,7 @@ export const AboutSection: React.FC = () => {
         {/* Scroll-animated Paragraph Description */}
         <div className="mt-10 sm:mt-14 md:mt-16 max-w-[560px]">
           <AnimatedText
-            text="With more than five years of experience in design, i focus on branding, web design, and user experience, i truly enjoy working with businesses that aim to stand out and present their best image. Let's build something incredible together!"
+            text="Passionate about design, development, and user experience, I create websites and platforms that combine creativity with functionality. From education platforms to modern web experiences, I love turning ideas into reality."
             className="text-[#D7E2EA] font-medium text-center leading-relaxed"
             style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)' } as any}
           />
