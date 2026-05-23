@@ -1,30 +1,15 @@
 import React, { useEffect, useRef } from 'react';
 
 const FIRST_ROW_GIFS = [
-  'https://motionsites.ai/assets/hero-space-voyage-preview-eECLH3Yc.gif',
-  'https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif',
-  'https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif',
-  'https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif',
-  'https://motionsites.ai/assets/hero-asme-preview-B_nGDnTP.gif',
-  'https://motionsites.ai/assets/hero-transform-data-preview-Cx5OU29N.gif',
-  'https://motionsites.ai/assets/hero-vitara-preview-Cjz2QYyU.gif',
-  'https://motionsites.ai/assets/hero-terra-preview-BFjrCr7T.gif',
-  'https://motionsites.ai/assets/hero-skyelite-preview-DHaZIgUv.gif',
-  'https://motionsites.ai/assets/hero-aethera-preview-DknSlcTa.gif',
-  'https://motionsites.ai/assets/hero-designpro-preview-D8c5_een.gif',
+  'https://blogger.googleusercontent.com/img/a/AVvXsEh7MZ7Nw43bGqPcDb0w_haxlls4M_RUoajoyQehojv9TF9SfC4dn1O5kCPnIcyvWBvgwvTGotW_BWJX9cG4DEuD3JcY9mbsDPolzQcmE-jHL8zfRyfGY_RUqwwaBXVN_xcY27uUqcp5E5yKR0_ID5WysOC9S-iPv--RVX0S5HMasm4elce9nf9yjQMN2N9A',
+  'https://blogger.googleusercontent.com/img/a/AVvXsEjM6XCL2yqs6uRC7lI2HVi76EpB4ftz86j-1z5HtT7pyBc5r7_hCHsGTbiTw8HfpyHeJ-PTvDVW78yjtfJTuFKzj7pw2iTAHDRaZRVUqtpdFYNhk822bTy6j9XtzRTO0CRVLLlWaKDQ8V8AFWrpkmLwq1DIO-tnd7ROylZUf4b6kAjFISpgbJjnRDtF3TGl',
+  'https://blogger.googleusercontent.com/img/a/AVvXsEi6FNXBQKSgV_g_uglKjcfqpQxDNdY7QG5R_Y-eqMhzsdZqUXhFpO0xkSrEh69WyscrDmmVL3JGJPnSwM0u2sidXEEqBKBPVEenvD1qXFqsU_yXUqfeIE876smLYPBQs_hrCzE5bbmr8JeokPLnjl2AwBh6AV7LQNIGxVvsKL0Q-8FsD7QElI2ScN9H8rlD',
 ];
 
 const SECOND_ROW_GIFS = [
-  'https://motionsites.ai/assets/hero-stellar-ai-preview-D3HL6bw1.gif',
-  'https://motionsites.ai/assets/hero-xportfolio-preview-D4A8maiC.gif',
-  'https://motionsites.ai/assets/hero-orbit-web3-preview-BXt4OttD.gif',
-  'https://motionsites.ai/assets/hero-nexora-preview-cx5HmUgo.gif',
-  'https://motionsites.ai/assets/hero-evr-ventures-preview-DZxeVFEX.gif',
-  'https://motionsites.ai/assets/hero-planet-orbit-preview-DWAP8Z1P.gif',
-  'https://motionsites.ai/assets/hero-new-era-preview-CocuDUm9.gif',
-  'https://motionsites.ai/assets/hero-wealth-preview-B70idl_u.gif',
-  'https://motionsites.ai/assets/hero-luminex-preview-CxOP7ce6.gif',
-  'https://motionsites.ai/assets/hero-celestia-preview-0yO3jXO8.gif',
+  'https://blogger.googleusercontent.com/img/a/AVvXsEirUXQrgCIP-xYR4viDcRg8Yu6fLi81_3kKQf3E9xRbWoAiAw5Do697yMD34K79jkzFvRLQsesl-QpJtH0E-TMDtj3EeosfvWnjbEyAKKmxOJuJ5v65wpN5K4AzcC8hmCuPHxlTU-5uH5__cpRCzAuty6eTFbj7lN9bmhXom1mjp-s_qtCLLckc6j6UALwt',
+  'https://blogger.googleusercontent.com/img/a/AVvXsEikStd_OLbwVsmv5XTZreydIV7pTkyhRbsofHLEMc5mbJSYpr-kF9s6o37ED67oJPMmnjemY2CCn_cIdgjVXYeZ54QWkZMWJrGRygAWTv3A_GnlaJSplODu3E0w7znmPl18HFjvVLSciuxEoEIl88qLSMFPgHYS60GH6GTVGNAGqzSD4TisGimfz4qLUbzw',
+  'https://blogger.googleusercontent.com/img/a/AVvXsEiMlvsD2UZ9A6XzTkihOdH9liIimgVhGgjOg6K3QEbvy91DYeyniUx6pgvKkogDSq8M44ofHT3gnlm5T8q_6WF4toJI5inBqJ0GrxClQnUscdCBbNlpqWqCIlp8cT28oPm4unXSJdceqQIw_IVGhJk9VLE4vow6ysflrgxV6ILXJJwMvyACS_0eLWYpZ3S2',
 ];
 
 // Triple for seamless endless scroll bounds
