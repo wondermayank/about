@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 const FIRST_ROW_GIFS = [
   'https://blogger.googleusercontent.com/img/a/AVvXsEjAagXnh42IxR8amuSv11qL2K6JiYeDDolSwIBdy5Va40uCnBYc6IrJuXUKj1vSpYbCEN4nVKtqkCggV5shUnV4iC2wahB0KIUHLKgpJH5Am4uCuMROTEg_BUQmMs31JZAkhmprh26N9fPiCSrbl3hq3Vpc0x_VeORmdKv7Gu16kTH35wi4STP9dyrgsdc_',
@@ -58,8 +59,31 @@ export const MarqueeSection: React.FC = () => {
     <section
       ref={sectionRef}
       id="marquee"
-      className="bg-white pt-24 sm:pt-32 md:pt-40 pb-10 overflow-hidden w-full select-none"
+      className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 pt-24 sm:pt-32 md:pt-40 pb-10 overflow-hidden w-full select-none relative z-20 border-t border-slate-100/60"
     >
+      {/* Centered Pulsing Section Divider Boundary Cut Element */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none select-none">
+        <motion.div
+          animate={{ y: [-6, 6, -6] }}
+          transition={{ repeat: Infinity, duration: 2.8, ease: "easeInOut" }}
+          className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
+        >
+          {/* Glowing neon core overlay */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#c084fc]/10 to-transparent" />
+          
+          {/* Gallery Play SVG inside */}
+          <svg
+            className="w-8 h-8 sm:w-10 sm:h-10 text-[#c084fc]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1.5}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+          </svg>
+        </motion.div>
+      </div>
+
       <div className="flex flex-col gap-3 w-full">
         {/* Row 1 Container */}
         <div className="overflow-visible w-full flex">

@@ -41,7 +41,7 @@ function App() {
   };
 
   return (
-    <div className="w-full bg-[#0C0C0C] min-h-screen text-[#D7E2EA] font-sans relative overflow-x-clip">
+    <div className="w-full bg-[#FAF5FF] min-h-screen text-[#D7E2EA] font-sans relative overflow-x-clip">
       {/* Premium Loader Screen */}
       <AnimatePresence>
         {isLoading && (
@@ -143,6 +143,29 @@ function App() {
 
       {/* Portals & Platforms Section */}
       <section className="py-24 sm:py-28 md:py-36 w-full bg-white relative z-30 overflow-hidden border-t border-slate-100">
+        {/* Centered Pulsing Section Divider Boundary Cut Element */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none select-none">
+          <motion.div
+            animate={{ y: [-6, 6, -6] }}
+            transition={{ repeat: Infinity, duration: 3.6, ease: "easeInOut" }}
+            className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
+          >
+            {/* Glowing neon core overlay */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#c084fc]/10 to-transparent" />
+            
+            {/* Grid Launch icon SVG inside */}
+            <svg
+              className="w-8 h-8 sm:w-10 sm:h-10 text-[#c084fc]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={1.5}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+            </svg>
+          </motion.div>
+        </div>
+
         {/* Interactive Sparkles Background for the whole section */}
         <div className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-40">
           <SparklesCore

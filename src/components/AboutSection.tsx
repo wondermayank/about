@@ -2,13 +2,36 @@ import React from 'react';
 import { FadeIn } from './FadeIn';
 import { AnimatedText } from './AnimatedText';
 import { ContactButton } from './ContactButton';
+import { motion } from 'framer-motion';
 
 export const AboutSection: React.FC = () => {
   return (
     <section
       id="about"
-      className="relative min-h-screen w-full bg-white px-5 sm:px-8 md:px-10 py-20 flex flex-col justify-center items-center text-center overflow-hidden"
+      className="relative min-h-screen w-full bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-5 sm:px-8 md:px-10 py-20 flex flex-col justify-center items-center text-center overflow-hidden z-20 border-t border-slate-100/60"
     >
+      {/* Centered Pulsing Section Divider Boundary Cut Element */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none select-none">
+        <motion.div
+          animate={{ y: [-6, 6, -6] }}
+          transition={{ repeat: Infinity, duration: 3.4, ease: "easeInOut" }}
+          className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
+        >
+          {/* Glowing neon core overlay */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#c084fc]/10 to-transparent" />
+          
+          {/* User profile silhouette SVG inside */}
+          <svg
+            className="w-8 h-8 sm:w-10 sm:h-10 text-[#c084fc]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1.5}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+          </svg>
+        </motion.div>
+      </div>
       {/* Decorative 3D corner images absolutely positioned */}
       {/* Top-Left: Moon icon */}
       <FadeIn

@@ -130,6 +130,29 @@ export const ProjectsSection: React.FC = () => {
       id="projects"
       className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 pb-32 -mt-10 sm:-mt-12 md:-mt-14 relative z-30 pt-20 border-t border-slate-100"
     >
+      {/* Centered Pulsing Section Divider Boundary Cut Element */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none select-none">
+        <motion.div
+          animate={{ y: [-6, 6, -6] }}
+          transition={{ repeat: Infinity, duration: 3.2, ease: "easeInOut" }}
+          className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
+        >
+          {/* Glowing neon core overlay */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#c084fc]/10 to-transparent" />
+          
+          {/* Code / Project bracket SVG inside */}
+          <svg
+            className="w-8 h-8 sm:w-10 sm:h-10 text-[#c084fc]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1.5}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+          </svg>
+        </motion.div>
+      </div>
+
       <div className="w-full max-w-5xl mx-auto flex flex-col items-center">
         {/* Section Heading */}
         <FadeIn delay={0} y={40}>
