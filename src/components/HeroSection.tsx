@@ -41,7 +41,7 @@ export const HeroSection: React.FC = () => {
       <div className="flex-1 flex items-start justify-center pt-10 sm:pt-14 md:pt-20 z-20">
         <div className="w-full overflow-hidden select-none pointer-events-none">
           <FadeIn delay={0.15} y={40} className="w-full">
-            <h1 className="hero-heading text-center font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw] mt-6 sm:mt-4 md:-mt-5">
+            <h1 className="hero-heading text-center font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[9vw] sm:text-[9.5vw] md:text-[10vw] lg:text-[10.5vw] mt-6 sm:mt-4 md:-mt-5">
               Hi, i&apos;m wondermayank
             </h1>
           </FadeIn>
@@ -62,9 +62,9 @@ export const HeroSection: React.FC = () => {
           className="w-full flex justify-center items-end"
         >
           <img
-            src="https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png"
-            alt="Jack Portrait"
-            className="w-full h-auto object-contain select-none pointer-events-none"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnFICxCcbaWh5iSoMWsVKbbsFZlYPAb7Il3Po4UCHKkT7MZ_RD0bBsQlXgjRSI2NZmwUEhhDyMdjhQ0CTfGrlsVURTkjHpthe-vLRnoC3_fabW5Yu2LU4eAu-t1xVssyjZUHCAmuupkHdMbbxgmSRdULgulogiFmemPcMk7hA1OAMx6oF5xFlwvM9DbWR8/s1024/ChatGPT%20Image%20May%2023,%202026,%2003_09_18%20PM.png"
+            alt="Wondermayank Portrait"
+            className="w-full h-auto object-contain select-none pointer-events-none rounded-[30px] sm:rounded-[40px]"
             draggable="false"
           />
         </Magnet>
