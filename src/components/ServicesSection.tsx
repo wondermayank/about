@@ -4,28 +4,28 @@ import { FadeIn } from './FadeIn';
 const SERVICES_DATA = [
   {
     num: '01',
-    name: '3D Modeling',
-    desc: 'Creation of detailed objects, characters, or environments tailored to specific client needs, ideal for games, products, and visualizations.',
+    name: 'Creative Experiments',
+    desc: 'Hand AI with MediaPipe, NeurIQ adaptive IQ test, Velox animation library — weird ideas turned into real builds.',
   },
   {
     num: '02',
-    name: 'Rendering',
-    desc: 'High-quality, photorealistic renders that showcase designs with custom lighting, textures, and materials to bring concepts to life.',
+    name: 'India & Culture',
+    desc: 'Interactive state maps, festivals, cuisine, languages, history, Kayastha & Rajput heritage — a living archive of Bharat.',
   },
   {
     num: '03',
-    name: 'Motion Design',
-    desc: 'Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.',
+    name: 'Study Tools',
+    desc: 'Free CBT mocks, gamified dashboards, notes & flashcards for CUET, SSC, Banking and JEE-NEET. Built for every Indian student.',
   },
   {
     num: '04',
-    name: 'Branding',
-    desc: 'Crafting cohesive visual identities -- from logos to full brand systems -- that communicate a clear and memorable presence.',
+    name: 'Web Apps & Tools',
+    desc: 'Movie & anime finder, Paletteify, text-to-PDF, card generator and more — simple tools that just work.',
   },
   {
     num: '05',
-    name: 'Web Design',
-    desc: 'Designing clean, modern, and conversion-focused websites with attention to layout, typography, and user experience.',
+    name: 'love to create',
+    desc: 'i love to make tool and website for my self and public help',
   },
 ];
 
