@@ -6,27 +6,30 @@ import { LiveProjectButton } from './LiveProjectButton';
 const PROJECTS_DATA = [
   {
     num: '01',
-    category: 'Client',
-    name: 'Nextlevel Studio',
-    imgLeft1: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055344_5eff02e0-87a5-41ce-b64f-eb08da8f33db.png&w=1280&q=85',
-    imgLeft2: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055431_11d841fd-8b41-46a5-82e4-b04f2407a7d8.png&w=1280&q=85',
-    imgRight: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055451_e317bf2d-28d4-48cc-86b0-6f72f25b6327.png&w=1280&q=85',
+    category: 'student help',
+    name: 'cbt mock test',
+    url: 'https://commercesehoga.github.io/dashboard',
+    imgLeft1: 'https://blogger.googleusercontent.com/img/a/AVvXsEhklsaDd_KjwLHh3ahzrlRXfQdMYL_Q4_wUbAFVM7SgIv3NH0fr3cVdwlSTTnie2kNUOBqejuygEdDg3XDqnKHmMDZj8KNEzveauwh4AIyBWHgIx_OHTvkxGERJGsbpuaXeWmyw1O6Yw8VusJr80nzDDxspwtnjxlFpmlSY47osdGu6zS7XPkiwE9ua2uAa',
+    imgLeft2: 'https://blogger.googleusercontent.com/img/a/AVvXsEgWU8qSU6UVgkDI4-hyASL0l5krOuCklJslp25JWsTgyKCG7ne6Gr9_WfArFlrIwkOhs_YAgJ1M_abPMxUDGCTKGD6zUIzkuPg7MLo7z3mMJlTIFzNDJ-Qh6IuTevP2Fcli_0SPyjxJNxq1_eo948-Z1-Tbkt69F0zL8xlw0Krg5DaMgXdwTI0eEqJXBTt_',
+    imgRight: 'https://blogger.googleusercontent.com/img/a/AVvXsEjWe8DTgtscI12U8ybok0hqSd4ZxMtuZy_e252f-2Ry263KfBnaizeWTXh_fZhsn2WbPiz4y3xFfw9dfb4T6Eq-Qb8buVqddoH1ext2pOeA51FYihk8GobhBwXqATSfYVf43Bwv5Dz4p4Qrup9MZID_ZO6e7aLA49HZ7Mr80Q-P0Ubrwy6DkCFFdULhjiT7',
   },
   {
     num: '02',
-    category: 'Personal',
-    name: 'Aura Brand Identity',
-    imgLeft1: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055654_911201c5-36d9-4bc6-bac7-331adfce159f.png&w=1280&q=85',
-    imgLeft2: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055723_5ceda0b8-d9c2-4665-b2e3-83ba19ba76d1.png&w=1280&q=85',
-    imgRight: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055753_adc5dcbd-a8e6-49c0-b43a-9b030d835cea.png&w=1280&q=85',
+    category: 'public',
+    name: 'colour palette',
+    url: 'https://wondermayank.github.io/paletteify/',
+    imgLeft1: 'https://blogger.googleusercontent.com/img/a/AVvXsEhjy7j4L07tYhGjm3Swl9ZO4jYZW4WbmbdpyWZPpVGOSLcwgGz6x0Y61CPfUwaKQ9xnb-7c3KrFWhU2DY4PyHlypP7GCjMOli6ATFENvDhs3WDiHMXDsJ-gmaR9LiESlOKAjq2Sow9XgHgLSlrKNTxKIjKzyJ3fzs2mcjnyEgwf1Lw5Hi9HCBeCtTxeinkX',
+    imgLeft2: 'https://blogger.googleusercontent.com/img/a/AVvXsEjQ1qTiJJhyN1Y0WWu17RE03wYjIR24mkW_jtf3vKtt0zV6ICEFpZJdHa83mKUiqUK_rHYhzIx6xTYpVQ1VRZHRwQkN-j4wq5HMUBXRmAz8cnzHg3HtdBXJ7o1BkL7lX1Yp9Z3AU2-3PJS9PYgJV2bQG97IkyNajVyxiU9KgIbWTW62bRfcnkiJfelMxwzW',
+    imgRight: 'https://blogger.googleusercontent.com/img/a/AVvXsEgsRpju5vN8kRX7R-X3tqNm9ljW9HCXyUJbWrALeFo-fQnH-f9Z3irV1RjeXWmSLG0nbR59HdDW2_spTYEK8N-yP1J9N7XMECGpB7qAtREvTFYUablescCgKb7oDK66VXqYeUOiN67-sJgwE-kCy7t2Rpsqqrb8forakzWpdINvXbt-D0EmzwGYN2BJIdSf',
   },
   {
     num: '03',
-    category: 'Client',
-    name: 'Solaris Digital',
-    imgLeft1: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055759_963cfb0b-4bd1-4b0f-9d0a-09bd6cf95b2f.png&w=1280&q=85',
-    imgLeft2: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_060108_438f781a-9846-4dcc-89ab-c4e6cb830f5b.png&w=1280&q=85',
-    imgRight: 'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055818_9d062121-ad7e-46b9-999a-1a6a692ef1ee.png&w=1280&q=85',
+    category: 'student',
+    name: 'periodic table',
+    url: 'https://wondermayank.github.io/Periodic-Table/',
+    imgLeft1: 'https://blogger.googleusercontent.com/img/a/AVvXsEjD71RpW55gG3cxIlrGZp0sGNHpY98eFzdXustEfwfBeFcEe0vdFOLOMECm3CXsAeYn058DAtX7RH5BsqtykvztkoG1BGrRbkyZsIhpGMB-WfDMO4NxyYxde9CtNE5xUIClj10MPdm4rn4Rn5dsrzQlFs3jRRFaw_AjdBpSWYK5UvhlmE2doE-w9PWpMxnj',
+    imgLeft2: 'https://blogger.googleusercontent.com/img/a/AVvXsEhOFGB8vETjKyz1EjPWkrnziIi3fAPnmV5P77z8hdfoifCDtsZ2Lg8STE7WH-c7lCUjHO_gnQalPRm5prnuWd01vgUjNO4o89I-EXO_pO1uv3NvboinbO4QYWKPlM_de1Qj6dECq-mpLPwvl7N_qXmRnjxqWEkXQ6_GN51XgjqCn6c_42zmv-iz82eam_B4',
+    imgRight: 'https://blogger.googleusercontent.com/img/a/AVvXsEhTvu9vGNCfP0-h3M_Cxxw1P9zC4382BGn0ma4wgfh4mXFK3pWE6EA5EGG1PFEZb6czp_c39fJJW-odm4gsYyH0VmwRicoOYSWPFzAzdbsJcLh3JwRmk7tu14vNUv8X8VU7pj6IaTrEkw2THSqLhex1lPtBstjlHxE5Y3Agtk8uGjdiYikJ-RrMpP0jrgTt',
   },
 ];
 
@@ -81,7 +84,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
               </h3>
             </div>
           </div>
-          <LiveProjectButton />
+          <a href={project.url} target="_blank" rel="noopener noreferrer" className="block">
+            <LiveProjectButton />
+          </a>
         </div>
 
         {/* Bottom Two-Column Image Grid */}
