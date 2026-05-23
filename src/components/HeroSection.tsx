@@ -6,7 +6,7 @@ import { ContactButton } from './ContactButton';
 export const HeroSection: React.FC = () => {
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Price', href: '#services' }, // Wait, the spec says "Price" in navbar, which maps nicely to Services/Price packages
+    { name: 'love', href: '#services' }, // Wait, the spec says "Price" in navbar, which maps nicely to Services/Price packages
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
