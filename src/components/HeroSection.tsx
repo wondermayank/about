@@ -2,11 +2,12 @@ import React from 'react';
 import { FadeIn } from './FadeIn';
 import { Magnet } from './Magnet';
 import { ContactButton } from './ContactButton';
+import { SparklesCore } from './ui/sparkles';
 
 export const HeroSection: React.FC = () => {
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'love', href: '#services' }, // Wait, the spec says "Price" in navbar, which maps nicely to Services/Price packages
+    { name: 'Love', href: '#services' }, // Map to services / love to create section
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -21,6 +22,19 @@ export const HeroSection: React.FC = () => {
 
   return (
     <section className="relative h-screen flex flex-col justify-between overflow-hidden bg-[#0C0C0C] w-full">
+      {/* Interactive Sparkles Background */}
+      <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
+        <SparklesCore
+          id="tsparticleshero"
+          background="transparent"
+          minSize={0.4}
+          maxSize={1.2}
+          particleDensity={80}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+          speed={0.4}
+        />
+      </div>
       {/* Navbar */}
       <FadeIn delay={0} y={-20} className="w-full z-30">
         <nav className="flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8 w-full">
@@ -41,7 +55,7 @@ export const HeroSection: React.FC = () => {
       <div className="flex-1 flex items-start justify-center pt-10 sm:pt-14 md:pt-20 z-20">
         <div className="w-full overflow-hidden select-none pointer-events-none">
           <FadeIn delay={0.15} y={40} className="w-full">
-            <h1 className="hero-heading text-center font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[9vw] sm:text-[9.5vw] md:text-[10vw] lg:text-[10.5vw] mt-6 sm:mt-4 md:-mt-5">
+            <h1 className="hero-heading text-center font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[7.2vw] sm:text-[7.8vw] md:text-[8vw] lg:text-[8.2vw] mt-6 sm:mt-4 md:-mt-5">
               Hi, i&apos;m wondermayank
             </h1>
           </FadeIn>

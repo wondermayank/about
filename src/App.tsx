@@ -7,6 +7,7 @@ import { ServicesSection } from './components/ServicesSection';
 import { ProjectsSection } from './components/ProjectsSection';
 import { FadeIn } from './components/FadeIn';
 import { Mail, Github, Twitter, Instagram, ArrowUp } from 'lucide-react';
+import { SparklesPreview } from './components/SparklesPreview';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -60,9 +61,9 @@ function App() {
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                className="hero-heading font-black text-center uppercase tracking-widest text-3xl sm:text-4xl"
+                className="hero-heading font-semibold text-center tracking-normal text-lg sm:text-xl md:text-2xl px-6 leading-relaxed max-w-lg"
               >
-                wondermayank
+                You are given a task to integrate an existing React component in the codebase
               </motion.span>
 
               {/* Progress Bar Track */}
@@ -97,6 +98,27 @@ function App() {
 
       {/* 5. Projects Section */}
       <ProjectsSection />
+
+      {/* Sparkles Showcase Section */}
+      <section className="py-20 sm:py-24 md:py-32 w-full bg-[#0C0C0C] relative z-30 overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6">
+          <FadeIn delay={0.1} y={30} className="w-full text-center mb-12">
+            <span className="text-[#D7E2EA]/50 uppercase tracking-widest text-sm font-medium mb-3 block">
+              Interactive Component Integration
+            </span>
+            <h2 className="hero-heading font-black uppercase text-4xl sm:text-5xl md:text-6xl tracking-tight mb-4 leading-none">
+              Sparkles Showcase
+            </h2>
+            <p className="text-[#D7E2EA]/60 max-w-xl mx-auto font-light text-sm sm:text-base leading-relaxed">
+              A high-performance interactive particle core powered by tsParticles and Framer Motion. Try clicking or resizing!
+            </p>
+          </FadeIn>
+          
+          <FadeIn delay={0.3} y={40} className="w-full rounded-2xl border border-[#D7E2EA]/10 overflow-hidden shadow-2xl">
+            <SparklesPreview />
+          </FadeIn>
+        </div>
+      </section>
 
       {/* 6. Interactive Contact Footer Section */}
       <footer
