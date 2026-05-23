@@ -34,7 +34,7 @@ export const ServicesSection: React.FC = () => {
   return (
     <section
       id="services"
-      className="bg-[#F3F8FC] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 w-full text-center relative z-20 border-t border-sky-100/30"
+      className="bg-[#F3F8FC] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 w-full text-center relative z-20 border-t border-sky-100/30 -mt-10 sm:-mt-12 md:-mt-14"
     >
       {/* Centered Pulsing Section Divider Boundary Cut Element */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none select-none">
