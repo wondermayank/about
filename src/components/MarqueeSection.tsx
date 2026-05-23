@@ -7,7 +7,7 @@ const FIRST_ROW_GIFS = [
 ];
 
 const SECOND_ROW_GIFS = [
-  'https://blogger.googleusercontent.com/img/a/AVvXsEirUXQrgCIP-xYR4viDcRg8Yu6fLi81_3kKQf3E9xRbWoAiAw5Do697yMD34K79jkzFvRLQsesl-QpJtH0E-TMDtj3EeosfvWnjbEyAKKmxOJuJ5v65wpN5K4AzcC8hmCuPHxlTU-5uH5__cpRCzAuty6eTFbj7lN9bmhXom1mjp-s_qtCLLckc6j6UALwt',
+  'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055451_e317bf2d-28d4-48cc-86b0-6f72f25b6327.png&w=1280&q=85',
   'https://blogger.googleusercontent.com/img/a/AVvXsEikStd_OLbwVsmv5XTZreydIV7pTkyhRbsofHLEMc5mbJSYpr-kF9s6o37ED67oJPMmnjemY2CCn_cIdgjVXYeZ54QWkZMWJrGRygAWTv3A_GnlaJSplODu3E0w7znmPl18HFjvVLSciuxEoEIl88qLSMFPgHYS60GH6GTVGNAGqzSD4TisGimfz4qLUbzw',
   'https://blogger.googleusercontent.com/img/a/AVvXsEiMlvsD2UZ9A6XzTkihOdH9liIimgVhGgjOg6K3QEbvy91DYeyniUx6pgvKkogDSq8M44ofHT3gnlm5T8q_6WF4toJI5inBqJ0GrxClQnUscdCBbNlpqWqCIlp8cT28oPm4unXSJdceqQIw_IVGhJk9VLE4vow6ysflrgxV6ILXJJwMvyACS_0eLWYpZ3S2',
 ];
