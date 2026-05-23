@@ -89,7 +89,7 @@ export const AboutSection: React.FC = () => {
         {/* Scroll-animated Paragraph Description */}
         <div className="mt-10 sm:mt-14 md:mt-16 max-w-[560px]">
           <AnimatedText
-            text="With more than five years of experience in design, i focus on branding, web design, and user experience, i truly enjoy working with businesses that aim to stand out and present their best image. Let's build something incredible together!"
+            text="Passionate about design, development, and user experience, I create websites and platforms that combine creativity with functionality. From education platforms to modern web experiences, I love turning ideas into reality."
             className="text-[#D7E2EA] font-medium text-center leading-relaxed"
             style={{ fontSize: 'clamp(1rem, 2vw, 1.35rem)' } as any}
           />
