@@ -7,7 +7,7 @@ import { ServicesSection } from './components/ServicesSection';
 import { ProjectsSection } from './components/ProjectsSection';
 import { FadeIn } from './components/FadeIn';
 import { Mail, Github, Twitter, Instagram, ArrowUp } from 'lucide-react';
-import { SparklesPreview } from './components/SparklesPreview';
+import { SparklesCore } from './components/ui/sparkles';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -55,21 +55,63 @@ function App() {
             }}
             className="fixed inset-0 bg-[#0C0C0C] z-50 flex flex-col justify-center items-center select-none"
           >
-            <div className="flex flex-col items-center gap-6 max-w-xs w-full px-4">
+            <div className="flex flex-col items-center gap-6 max-w-md w-full px-6">
+              {/* 3D Glassmorphic Rotating Cube */}
+              <div className="w-32 h-32 flex items-center justify-center mb-4" style={{ perspective: '800px' }}>
+                <motion.div
+                  style={{ transformStyle: 'preserve-3d' }}
+                  animate={{ rotateX: [0, 360], rotateY: [0, 360] }}
+                  transition={{ repeat: Infinity, duration: 8, ease: 'linear' }}
+                  className="relative w-16 h-16"
+                >
+                  {/* Cube Faces */}
+                  {/* Front */}
+                  <div
+                    className="absolute inset-0 border border-[#B600A8]/50 bg-[#B600A8]/10 backdrop-blur-[2px] rounded-lg"
+                    style={{ transform: 'translateZ(32px)' }}
+                  />
+                  {/* Back */}
+                  <div
+                    className="absolute inset-0 border border-[#BE4C00]/50 bg-[#BE4C00]/10 backdrop-blur-[2px] rounded-lg"
+                    style={{ transform: 'rotateY(180deg) translateZ(32px)' }}
+                  />
+                  {/* Left */}
+                  <div
+                    className="absolute inset-0 border border-[#7621B0]/50 bg-[#7621B0]/10 backdrop-blur-[2px] rounded-lg"
+                    style={{ transform: 'rotateY(-90deg) translateZ(32px)' }}
+                  />
+                  {/* Right */}
+                  <div
+                    className="absolute inset-0 border border-[#D7E2EA]/40 bg-[#D7E2EA]/5 backdrop-blur-[2px] rounded-lg"
+                    style={{ transform: 'rotateY(90deg) translateZ(32px)' }}
+                  />
+                  {/* Top */}
+                  <div
+                    className="absolute inset-0 border border-[#B600A8]/50 bg-[#B600A8]/10 backdrop-blur-[2px] rounded-lg"
+                    style={{ transform: 'rotateX(90deg) translateZ(32px)' }}
+                  />
+                  {/* Bottom */}
+                  <div
+                    className="absolute inset-0 border border-[#7621B0]/50 bg-[#7621B0]/10 backdrop-blur-[2px] rounded-lg"
+                    style={{ transform: 'rotateX(-90deg) translateZ(32px)' }}
+                  />
+                </motion.div>
+              </div>
+
               {/* Brand Logo Text */}
               <motion.span
                 initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                className="hero-heading font-semibold text-center tracking-normal text-lg sm:text-xl md:text-2xl px-6 leading-relaxed max-w-lg"
+                className="hero-heading font-black text-center uppercase tracking-widest text-3xl sm:text-4xl"
               >
-                You are given a task to integrate an existing React component in the codebase
+                wondermayank about
               </motion.span>
 
-              {/* Progress Bar Track */}
-              <div className="w-full h-[2px] bg-[#D7E2EA]/10 rounded-full overflow-hidden relative mt-4">
+              {/* Progress Bar Track (Water Flow Style) */}
+              <div className="w-full water-flow-container relative mt-4">
                 <motion.div
-                  className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#B600A8] via-[#7621B0] to-[#BE4C00]"
+                  className="absolute top-0 left-0 water-flow-bar"
                   style={{ width: `${progress}%` }}
                 />
               </div>
@@ -99,24 +141,123 @@ function App() {
       {/* 5. Projects Section */}
       <ProjectsSection />
 
-      {/* Sparkles Showcase Section */}
-      <section className="py-20 sm:py-24 md:py-32 w-full bg-[#0C0C0C] relative z-30 overflow-hidden">
-        <div className="max-w-6xl mx-auto px-6">
-          <FadeIn delay={0.1} y={30} className="w-full text-center mb-12">
-            <span className="text-[#D7E2EA]/50 uppercase tracking-widest text-sm font-medium mb-3 block">
-              Interactive Component Integration
-            </span>
-            <h2 className="hero-heading font-black uppercase text-4xl sm:text-5xl md:text-6xl tracking-tight mb-4 leading-none">
-              Sparkles Showcase
-            </h2>
-            <p className="text-[#D7E2EA]/60 max-w-xl mx-auto font-light text-sm sm:text-base leading-relaxed">
-              A high-performance interactive particle core powered by tsParticles and Framer Motion. Try clicking or resizing!
-            </p>
-          </FadeIn>
-          
-          <FadeIn delay={0.3} y={40} className="w-full rounded-2xl border border-[#D7E2EA]/10 overflow-hidden shadow-2xl">
-            <SparklesPreview />
-          </FadeIn>
+      {/* Portals & Platforms Section */}
+      <section className="py-24 sm:py-28 md:py-36 w-full bg-[#0C0C0C] relative z-30 overflow-hidden border-t border-[#D7E2EA]/5">
+        {/* Interactive Sparkles Background for the whole section */}
+        <div className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-40">
+          <SparklesCore
+            id="tsparticlesportals"
+            background="transparent"
+            minSize={0.4}
+            maxSize={1.2}
+            particleDensity={70}
+            className="w-full h-full"
+            particleColor="#FFFFFF"
+            speed={0.4}
+          />
+        </div>
+
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+            {/* Card 1 */}
+            <FadeIn delay={0.1} y={30}>
+              <a
+                href="https://commercesehoga.github.io/dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col justify-between h-[360px] bg-white/[0.02] border border-[#D7E2EA]/10 rounded-[30px] p-8 hover:bg-white/[0.04] hover:border-[#B600A8]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(182,0,168,0.15)] relative overflow-hidden"
+              >
+                {/* Glow effect */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#B600A8]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
+                
+                <div>
+                  <span className="text-xs uppercase tracking-widest text-[#B600A8] font-bold mb-4 block">
+                    Launch Platform
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-black uppercase text-[#D7E2EA] mb-3 tracking-tight group-hover:text-white transition-colors duration-300">
+                    CBT Mock Test
+                  </h3>
+                  <span className="text-xs text-[#D7E2EA]/40 uppercase tracking-widest font-semibold block mb-4">
+                    commercesehoga.github.io
+                  </span>
+                  <p className="text-sm text-[#D7E2EA]/60 font-light leading-relaxed">
+                    A high-fidelity Computer Based Test engine built for Indian students preparing for CUET, SSC, and Banking exams with interactive real-time scoreboards.
+                  </p>
+                </div>
+                
+                <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#D7E2EA] group-hover:text-[#B600A8] transition-all duration-300 mt-6">
+                  <span>Launch Dashboard</span>
+                  <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                </div>
+              </a>
+            </FadeIn>
+
+            {/* Card 2 */}
+            <FadeIn delay={0.2} y={30}>
+              <a
+                href="https://thunderstudy.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col justify-between h-[360px] bg-white/[0.02] border border-[#D7E2EA]/10 rounded-[30px] p-8 hover:bg-white/[0.04] hover:border-[#7621B0]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(118,33,176,0.15)] relative overflow-hidden"
+              >
+                {/* Glow effect */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#7621B0]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
+                
+                <div>
+                  <span className="text-xs uppercase tracking-widest text-[#7621B0] font-bold mb-4 block">
+                    Free Education
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-black uppercase text-[#D7E2EA] mb-3 tracking-tight group-hover:text-white transition-colors duration-300">
+                    Study Material
+                  </h3>
+                  <span className="text-xs text-[#D7E2EA]/40 uppercase tracking-widest font-semibold block mb-4">
+                    thunderstudy.github.io
+                  </span>
+                  <p className="text-sm text-[#D7E2EA]/60 font-light leading-relaxed">
+                    An open educational repository providing organized, gamified resources, structured study notes, and lightning-fast revision decks.
+                  </p>
+                </div>
+                
+                <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#D7E2EA] group-hover:text-[#7621B0] transition-all duration-300 mt-6">
+                  <span>Explore Materials</span>
+                  <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                </div>
+              </a>
+            </FadeIn>
+
+            {/* Card 3 */}
+            <FadeIn delay={0.3} y={30}>
+              <a
+                href="https://wondermayank.github.io"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col justify-between h-[360px] bg-white/[0.02] border border-[#D7E2EA]/10 rounded-[30px] p-8 hover:bg-white/[0.04] hover:border-[#BE4C00]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(190,76,0,0.15)] relative overflow-hidden"
+              >
+                {/* Glow effect */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#BE4C00]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
+                
+                <div>
+                  <span className="text-xs uppercase tracking-widest text-[#BE4C00] font-bold mb-4 block">
+                    More Builds
+                  </span>
+                  <h3 className="text-2xl sm:text-3xl font-black uppercase text-[#D7E2EA] mb-3 tracking-tight group-hover:text-white transition-colors duration-300">
+                    More Projects
+                  </h3>
+                  <span className="text-xs text-[#D7E2EA]/40 uppercase tracking-widest font-semibold block mb-4">
+                    wondermayank.github.io
+                  </span>
+                  <p className="text-sm text-[#D7E2EA]/60 font-light leading-relaxed">
+                    Discover interactive anime search modules, experimental web tools, and customizable design sandboxes built with deep creative focus.
+                  </p>
+                </div>
+                
+                <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#D7E2EA] group-hover:text-[#BE4C00] transition-all duration-300 mt-6">
+                  <span>Browse Archive</span>
+                  <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                </div>
+              </a>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
