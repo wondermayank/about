@@ -55,12 +55,14 @@ function App() {
           {/* Email CTA button */}
           <FadeIn delay={0.2} y={30} className="mb-16">
             <a
-              href="mailto:jack@3dcreator.com"
+              href="https://wondermayank.github.io/contact.html"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center gap-3 bg-[#D7E2EA]/5 border border-[#D7E2EA]/15 rounded-full px-8 py-4 sm:px-10 sm:py-5 hover:bg-[#D7E2EA]/10 hover:border-[#D7E2EA]/30 transition-all duration-300 shadow-2xl"
             >
               <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-[#D7E2EA]/80 group-hover:scale-110 transition-transform duration-300" />
               <span className="text-sm sm:text-lg font-medium tracking-wide text-[#D7E2EA] lowercase">
-                jack@3dcreator.com
+                wondermayank.github.io/contact.html
               </span>
             </a>
           </FadeIn>
@@ -70,9 +72,9 @@ function App() {
             {/* Social Media Anchors */}
             <div className="flex items-center gap-6">
               {[
-                { icon: <Instagram className="w-5 h-5" />, href: 'https://instagram.com' },
-                { icon: <Twitter className="w-5 h-5" />, href: 'https://twitter.com' },
-                { icon: <Github className="w-5 h-5" />, href: 'https://github.com' },
+                { icon: <Instagram className="w-5 h-5" />, href: 'https://instagram.com/wondermayank' },
+                { icon: <Twitter className="w-5 h-5" />, href: 'https://twitter.com/wonder_mayank' },
+                { icon: <Github className="w-5 h-5" />, href: 'https://github.com/wondermayank' },
               ].map((social, i) => (
                 <a
                   key={i}
@@ -88,7 +90,7 @@ function App() {
 
             {/* Copyright */}
             <span className="text-[#D7E2EA]/40 text-xs sm:text-sm tracking-wider uppercase font-light">
-              &copy; {new Date().getFullYear()} JACK. ALL RIGHTS RESERVED.
+              &copy; {new Date().getFullYear()} wondermayank. ALL RIGHTS RESERVED.
             </span>
 
             {/* Back to top dynamic button */}
