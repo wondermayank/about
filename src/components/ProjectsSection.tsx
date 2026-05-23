@@ -135,14 +135,14 @@ export const ProjectsSection: React.FC = () => {
         <motion.div
           animate={{ y: [-6, 6, -6] }}
           transition={{ repeat: Infinity, duration: 3.2, ease: "easeInOut" }}
-          className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
         >
           {/* Glowing neon core overlay */}
           <div className="absolute inset-0 bg-gradient-to-tr from-[#c084fc]/10 to-transparent" />
           
           {/* Code / Project bracket SVG inside */}
           <svg
-            className="w-8 h-8 sm:w-10 sm:h-10 text-[#c084fc]"
+            className="w-6 h-6 sm:w-7 sm:h-7 text-[#c084fc]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

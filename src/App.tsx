@@ -142,20 +142,20 @@ function App() {
       <ProjectsSection />
 
       {/* Portals & Platforms Section */}
-      <section className="py-24 sm:py-28 md:py-36 w-full bg-white relative z-30 overflow-hidden border-t border-slate-100">
+      <div className="relative w-full">
         {/* Centered Pulsing Section Divider Boundary Cut Element */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none select-none">
           <motion.div
             animate={{ y: [-6, 6, -6] }}
             transition={{ repeat: Infinity, duration: 3.6, ease: "easeInOut" }}
-            className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
+            className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
           >
             {/* Glowing neon core overlay */}
             <div className="absolute inset-0 bg-gradient-to-tr from-[#c084fc]/10 to-transparent" />
             
             {/* Grid Launch icon SVG inside */}
             <svg
-              className="w-8 h-8 sm:w-10 sm:h-10 text-[#c084fc]"
+              className="w-6 h-6 sm:w-7 sm:h-7 text-[#c084fc]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -166,123 +166,125 @@ function App() {
           </motion.div>
         </div>
 
-        {/* Interactive Sparkles Background for the whole section */}
-        <div className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-40">
-          <SparklesCore
-            id="tsparticlesportals"
-            background="transparent"
-            minSize={0.4}
-            maxSize={1.2}
-            particleDensity={70}
-            className="w-full h-full"
-            particleColor="#c084fc"
-            speed={0.4}
-          />
-        </div>
-
-        <div className="max-w-6xl mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-            {/* Card 1 */}
-            <FadeIn delay={0.1} y={30}>
-              <a
-                href="https://commercesehoga.github.io/dashboard"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col justify-between h-[360px] bg-[#F3F8FC] border border-sky-100 rounded-[30px] p-8 hover:bg-[#E0F2FE] hover:border-[#c084fc]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(192,132,252,0.15)] relative overflow-hidden"
-              >
-                {/* Glow effect */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#c084fc]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
-                
-                <div>
-                  <span className="text-xs uppercase tracking-widest text-[#c084fc] font-bold mb-4 block">
-                    Launch Platform
-                  </span>
-                  <h3 className="text-2xl sm:text-3xl font-black uppercase text-[#0C0C0C] mb-3 tracking-tight group-hover:text-black transition-colors duration-300">
-                    CBT Mock Test
-                  </h3>
-                  <span className="text-xs text-[#0C0C0C]/40 uppercase tracking-widest font-semibold block mb-4">
-                    commercesehoga.github.io
-                  </span>
-                  <p className="text-sm text-[#0C0C0C]/60 font-light leading-relaxed">
-                    A high-fidelity Computer Based Test engine built for Indian students preparing for CUET, SSC, and Banking exams with interactive real-time scoreboards.
-                  </p>
-                </div>
-                
-                <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0C0C0C] group-hover:text-[#c084fc] transition-all duration-300 mt-6">
-                  <span>Launch Dashboard</span>
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
-                </div>
-              </a>
-            </FadeIn>
-
-            {/* Card 2 */}
-            <FadeIn delay={0.2} y={30}>
-              <a
-                href="https://thunderstudy.github.io"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col justify-between h-[360px] bg-[#F3F8FC] border border-sky-100 rounded-[30px] p-8 hover:bg-[#E0F2FE] hover:border-[#d8b4fe]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(216,180,254,0.15)] relative overflow-hidden"
-              >
-                {/* Glow effect */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#d8b4fe]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
-                
-                <div>
-                  <span className="text-xs uppercase tracking-widest text-[#d8b4fe] font-bold mb-4 block">
-                    Free Education
-                  </span>
-                  <h3 className="text-2xl sm:text-3xl font-black uppercase text-[#0C0C0C] mb-3 tracking-tight group-hover:text-black transition-colors duration-300">
-                    Study Material
-                  </h3>
-                  <span className="text-xs text-[#0C0C0C]/40 uppercase tracking-widest font-semibold block mb-4">
-                    thunderstudy.github.io
-                  </span>
-                  <p className="text-sm text-[#0C0C0C]/60 font-light leading-relaxed">
-                    An open educational repository providing organized, gamified resources, structured study notes, and lightning-fast revision decks.
-                  </p>
-                </div>
-                
-                <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0C0C0C] group-hover:text-[#d8b4fe] transition-all duration-300 mt-6">
-                  <span>Explore Materials</span>
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
-                </div>
-              </a>
-            </FadeIn>
-
-            {/* Card 3 */}
-            <FadeIn delay={0.3} y={30}>
-              <a
-                href="https://wondermayank.github.io"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col justify-between h-[360px] bg-[#F3F8FC] border border-sky-100 rounded-[30px] p-8 hover:bg-[#E0F2FE] hover:border-[#e9d5ff]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(233,213,255,0.15)] relative overflow-hidden"
-              >
-                {/* Glow effect */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#e9d5ff]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
-                
-                <div>
-                  <span className="text-xs uppercase tracking-widest text-[#e9d5ff] font-bold mb-4 block">
-                    More Builds
-                  </span>
-                  <h3 className="text-2xl sm:text-3xl font-black uppercase text-[#0C0C0C] mb-3 tracking-tight group-hover:text-black transition-colors duration-300">
-                    More Projects
-                  </h3>
-                  <span className="text-xs text-[#0C0C0C]/40 uppercase tracking-widest font-semibold block mb-4">
-                    wondermayank.github.io
-                  </span>
-                  <p className="text-sm text-[#0C0C0C]/60 font-light leading-relaxed">
-                    Discover interactive anime search modules, experimental web tools, and customizable design sandboxes built with deep creative focus.
-                  </p>
-                </div>
-                
-                <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0C0C0C] group-hover:text-[#c084fc] transition-all duration-300 mt-6">
-                  <span>Browse Archive</span>
-                  <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
-                </div>
-              </a>
-            </FadeIn>
+        <section className="py-24 sm:py-28 md:py-36 w-full bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 relative z-30 overflow-hidden border-t border-slate-100">
+          {/* Interactive Sparkles Background for the whole section */}
+          <div className="absolute inset-0 w-full h-full z-0 pointer-events-none opacity-40">
+            <SparklesCore
+              id="tsparticlesportals"
+              background="transparent"
+              minSize={0.4}
+              maxSize={1.2}
+              particleDensity={70}
+              className="w-full h-full"
+              particleColor="#c084fc"
+              speed={0.4}
+            />
           </div>
-        </div>
-      </section>
+
+          <div className="max-w-6xl mx-auto px-6 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
+              {/* Card 1 */}
+              <FadeIn delay={0.1} y={30}>
+                <a
+                  href="https://commercesehoga.github.io/dashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col justify-between h-[360px] bg-[#F3F8FC] border border-sky-100 rounded-[30px] p-8 hover:bg-[#E0F2FE] hover:border-[#c084fc]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(192,132,252,0.15)] relative overflow-hidden"
+                >
+                  {/* Glow effect */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#c084fc]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
+                  
+                  <div>
+                    <span className="text-xs uppercase tracking-widest text-[#c084fc] font-bold mb-4 block">
+                      Launch Platform
+                    </span>
+                    <h3 className="text-2xl sm:text-3xl font-black uppercase text-[#0C0C0C] mb-3 tracking-tight group-hover:text-black transition-colors duration-300">
+                      CBT Mock Test
+                    </h3>
+                    <span className="text-xs text-[#0C0C0C]/40 uppercase tracking-widest font-semibold block mb-4">
+                      commercesehoga.github.io
+                    </span>
+                    <p className="text-sm text-[#0C0C0C]/60 font-light leading-relaxed">
+                      A high-fidelity Computer Based Test engine built for Indian students preparing for CUET, SSC, and Banking exams with interactive real-time scoreboards.
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0C0C0C] group-hover:text-[#c084fc] transition-all duration-300 mt-6">
+                    <span>Launch Dashboard</span>
+                    <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                  </div>
+                </a>
+              </FadeIn>
+
+              {/* Card 2 */}
+              <FadeIn delay={0.2} y={30}>
+                <a
+                  href="https://thunderstudy.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col justify-between h-[360px] bg-[#F3F8FC] border border-sky-100 rounded-[30px] p-8 hover:bg-[#E0F2FE] hover:border-[#d8b4fe]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(216,180,254,0.15)] relative overflow-hidden"
+                >
+                  {/* Glow effect */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#d8b4fe]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
+                  
+                  <div>
+                    <span className="text-xs uppercase tracking-widest text-[#d8b4fe] font-bold mb-4 block">
+                      Free Education
+                    </span>
+                    <h3 className="text-2xl sm:text-3xl font-black uppercase text-[#0C0C0C] mb-3 tracking-tight group-hover:text-black transition-colors duration-300">
+                      Study Material
+                    </h3>
+                    <span className="text-xs text-[#0C0C0C]/40 uppercase tracking-widest font-semibold block mb-4">
+                      thunderstudy.github.io
+                    </span>
+                    <p className="text-sm text-[#0C0C0C]/60 font-light leading-relaxed">
+                      An open educational repository providing organized, gamified resources, structured study notes, and lightning-fast revision decks.
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0C0C0C] group-hover:text-[#d8b4fe] transition-all duration-300 mt-6">
+                    <span>Explore Materials</span>
+                    <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                  </div>
+                </a>
+              </FadeIn>
+
+              {/* Card 3 */}
+              <FadeIn delay={0.3} y={30}>
+                <a
+                  href="https://wondermayank.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex flex-col justify-between h-[360px] bg-[#F3F8FC] border border-sky-100 rounded-[30px] p-8 hover:bg-[#E0F2FE] hover:border-[#e9d5ff]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(233,213,255,0.15)] relative overflow-hidden"
+                >
+                  {/* Glow effect */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#e9d5ff]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
+                  
+                  <div>
+                    <span className="text-xs uppercase tracking-widest text-[#e9d5ff] font-bold mb-4 block">
+                      More Builds
+                    </span>
+                    <h3 className="text-2xl sm:text-3xl font-black uppercase text-[#0C0C0C] mb-3 tracking-tight group-hover:text-black transition-colors duration-300">
+                      More Projects
+                    </h3>
+                    <span className="text-xs text-[#0C0C0C]/40 uppercase tracking-widest font-semibold block mb-4">
+                      wondermayank.github.io
+                    </span>
+                    <p className="text-sm text-[#0C0C0C]/60 font-light leading-relaxed">
+                      Discover interactive anime search modules, experimental web tools, and customizable design sandboxes built with deep creative focus.
+                    </p>
+                  </div>
+                  
+                  <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0C0C0C] group-hover:text-[#c084fc] transition-all duration-300 mt-6">
+                    <span>Browse Archive</span>
+                    <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                  </div>
+                </a>
+              </FadeIn>
+            </div>
+          </div>
+        </section>
+      </div>
 
       {/* 6. Interactive Contact Footer Section */}
       <footer

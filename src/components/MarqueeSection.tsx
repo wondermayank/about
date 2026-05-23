@@ -56,24 +56,20 @@ export const MarqueeSection: React.FC = () => {
   }, []);
 
   return (
-    <section
-      ref={sectionRef}
-      id="marquee"
-      className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 pt-24 sm:pt-32 md:pt-40 pb-10 overflow-hidden w-full select-none relative z-20 border-t border-slate-100/60"
-    >
+    <div className="relative w-full">
       {/* Centered Pulsing Section Divider Boundary Cut Element */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none select-none">
         <motion.div
           animate={{ y: [-6, 6, -6] }}
           transition={{ repeat: Infinity, duration: 2.8, ease: "easeInOut" }}
-          className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
         >
           {/* Glowing neon core overlay */}
           <div className="absolute inset-0 bg-gradient-to-tr from-[#c084fc]/10 to-transparent" />
           
           {/* Gallery Play SVG inside */}
           <svg
-            className="w-8 h-8 sm:w-10 sm:h-10 text-[#c084fc]"
+            className="w-6 h-6 sm:w-7 sm:h-7 text-[#c084fc]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -84,47 +80,53 @@ export const MarqueeSection: React.FC = () => {
         </motion.div>
       </div>
 
-      <div className="flex flex-col gap-3 w-full">
-        {/* Row 1 Container */}
-        <div className="overflow-visible w-full flex">
-          <div
-            ref={row1Ref}
-            className="flex gap-3 will-change-transform"
-            style={{ transform: 'translate3d(-200px, 0px, 0px)' }}
-          >
-            {ROW1_TILES.map((src, idx) => (
-              <img
-                key={`r1-${idx}`}
-                src={src}
-                alt={`Space Voyage ${idx}`}
-                loading="lazy"
-                className="w-[420px] h-[270px] min-w-[420px] min-h-[270px] rounded-2xl object-cover"
-                draggable="false"
-              />
-            ))}
+      <section
+        ref={sectionRef}
+        id="marquee"
+        className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 pt-24 sm:pt-32 md:pt-40 pb-10 overflow-hidden w-full select-none relative z-20 border-t border-slate-100/60"
+      >
+        <div className="flex flex-col gap-3 w-full">
+          {/* Row 1 Container */}
+          <div className="overflow-visible w-full flex">
+            <div
+              ref={row1Ref}
+              className="flex gap-3 will-change-transform"
+              style={{ transform: 'translate3d(-200px, 0px, 0px)' }}
+            >
+              {ROW1_TILES.map((src, idx) => (
+                <img
+                  key={`r1-${idx}`}
+                  src={src}
+                  alt={`Space Voyage ${idx}`}
+                  loading="lazy"
+                  className="w-[420px] h-[270px] min-w-[420px] min-h-[270px] rounded-2xl object-cover"
+                  draggable="false"
+                />
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Row 2 Container */}
-        <div className="overflow-visible w-full flex">
-          <div
-            ref={row2Ref}
-            className="flex gap-3 will-change-transform"
-            style={{ transform: 'translate3d(200px, 0px, 0px)' }}
-          >
-            {ROW2_TILES.map((src, idx) => (
-              <img
-                key={`r2-${idx}`}
-                src={src}
-                alt={`Codename ${idx}`}
-                loading="lazy"
-                className="w-[420px] h-[270px] min-w-[420px] min-h-[270px] rounded-2xl object-cover"
-                draggable="false"
-              />
-            ))}
+          {/* Row 2 Container */}
+          <div className="overflow-visible w-full flex">
+            <div
+              ref={row2Ref}
+              className="flex gap-3 will-change-transform"
+              style={{ transform: 'translate3d(200px, 0px, 0px)' }}
+            >
+              {ROW2_TILES.map((src, idx) => (
+                <img
+                  key={`r2-${idx}`}
+                  src={src}
+                  alt={`Codename ${idx}`}
+                  loading="lazy"
+                  className="w-[420px] h-[270px] min-w-[420px] min-h-[270px] rounded-2xl object-cover"
+                  draggable="false"
+                />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
