@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { HeroSection } from './components/HeroSection';
 import { MarqueeSection } from './components/MarqueeSection';
 import { AboutSection } from './components/AboutSection';
@@ -7,12 +9,80 @@ import { FadeIn } from './components/FadeIn';
 import { Mail, Github, Twitter, Instagram, ArrowUp } from 'lucide-react';
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    // Increment progress from 0% to 100% over 5000ms (5 seconds)
+    const duration = 5000;
+    const intervalTime = 50; 
+    const increment = 100 / (duration / intervalTime);
+
+    const timer = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 100) {
+          clearInterval(timer);
+          // Wait 300ms after reaching 100% for a smooth, cohesive reveal
+          setTimeout(() => {
+            setIsLoading(false);
+          }, 300);
+          return 100;
+        }
+        return prev + increment;
+      });
+    }, intervalTime);
+
+    return () => clearInterval(timer);
+  }, []);
+
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <div className="w-full bg-[#0C0C0C] min-h-screen text-[#D7E2EA] font-sans relative overflow-x-clip">
+      {/* Premium Loader Screen */}
+      <AnimatePresence>
+        {isLoading && (
+          <motion.div
+            key="loader"
+            initial={{ opacity: 1 }}
+            exit={{
+              opacity: 0,
+              y: '-100%',
+              transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] }
+            }}
+            className="fixed inset-0 bg-[#0C0C0C] z-50 flex flex-col justify-center items-center select-none"
+          >
+            <div className="flex flex-col items-center gap-6 max-w-xs w-full px-4">
+              {/* Brand Logo Text */}
+              <motion.span
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: 'easeOut' }}
+                className="hero-heading font-black text-center uppercase tracking-widest text-3xl sm:text-4xl"
+              >
+                wondermayank
+              </motion.span>
+
+              {/* Progress Bar Track */}
+              <div className="w-full h-[2px] bg-[#D7E2EA]/10 rounded-full overflow-hidden relative mt-4">
+                <motion.div
+                  className="absolute top-0 left-0 h-full bg-gradient-to-r from-[#B600A8] via-[#7621B0] to-[#BE4C00]"
+                  style={{ width: `${progress}%` }}
+                />
+              </div>
+
+              {/* Numerical Percent Indicator */}
+              <motion.span className="text-[#D7E2EA] opacity-60 text-sm font-semibold tracking-wider tabular-nums">
+                {Math.round(progress)}%
+              </motion.span>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Main Website Contents */}
       {/* 1. Hero Section */}
       <HeroSection />
 
