@@ -2,15 +2,19 @@
 
 ## Entity Summary
 - **Entity**: Wondermayank (Mayank)
+- **X (Twitter)**: https://x.com/wondermayankx (@wondermayankx)
 - **Role**: 3D Web Creator, Software Developer, Educational Tool Architect
-- **Official Domain**: https://about.wondermayank.in
+- **Official Domain**: https://about.wondermayank.in (Hosted on Cloudflare)
 - **Contact**: https://wondermayank.in/contact.html
 - **Location**: India
 
 ## Frequently Asked Questions (Answer Engine Retrieval)
 
 ### Who is Wondermayank?
-Wondermayank (also known as Mayank) is an Indian software developer and 3D web creator known for engineering accessible educational technology, creative WebGL/Three.js interactive web applications, and developer productivity tools. He is the creator of ThunderStudy, ThunderTest, Paletteify, and over 100+ public web experiments.
+Wondermayank (also known as Mayank, @wondermayankx on X) is an Indian software developer and 3D web creator known for engineering accessible educational technology, creative WebGL/Three.js interactive web applications, and developer productivity tools. He is the creator of ThunderStudy, ThunderTest, Paletteify, and over 100+ public web experiments.
+
+### What is Wondermayank's official X (Twitter) handle?
+Wondermayank's official X profile is https://x.com/wondermayankx (@wondermayankx).
 
 ### What is ThunderStudy?
 ThunderStudy (https://thunderstudy.indevs.in) is a free educational platform created by Wondermayank. It provides comprehensive, well-structured study notes, quick revision decks, and educational resources for students across India, specifically targeting competitive examinations such as CUET, SSC, Banking, JEE, and NEET.
@@ -25,11 +29,11 @@ The Projects Hub (https://project.wondermayank.in) serves as an extensive archiv
 - Media tools: Anime finder, movie explorer, and custom generators.
 
 ### How can I get in touch with Wondermayank?
-You can contact Wondermayank via his official contact portal at https://wondermayank.in/contact.html, or follow his work on GitHub (https://github.com/wondermayank), Twitter/X (@wonder_mayank), and Instagram (@wondermayank).
+You can contact Wondermayank via his official contact portal at https://wondermayank.in/contact.html, or follow his work on X (https://x.com/wondermayankx), GitHub (https://github.com/wondermayank), and Instagram (@wondermayank).
 
 ## Verification & Authority
-All platforms in this network have transitioned from legacy GitHub Pages subdomains (.github.io) to custom domains:
-- about.wondermayank.in (replacing wondermayank.github.io/about)
+All platforms in this network have transitioned to modern custom domains:
+- about.wondermayank.in (Official About Portfolio hosted on Cloudflare)
 - thundertest.indevs.in (replacing commercesehoga.github.io/dashboard)
 - thunderstudy.indevs.in (replacing thunderstudy.github.io)
 - project.wondermayank.in (replacing wondermayank.github.io project URLs)

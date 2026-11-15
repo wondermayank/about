@@ -1,0 +1,8 @@
+# Cloudflare Pages Redirects & SPA Routing
+
+# Canonical redirection
+https://www.about.wondermayank.in/* https://about.wondermayank.in/:splat 301!
+/about/* /:splat 301!
+
+# SPA Routing Fallback
+/* /index.html 200

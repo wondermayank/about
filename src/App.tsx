@@ -330,15 +330,16 @@ function App() {
             {/* Social Media Anchors */}
             <div className="flex items-center gap-6">
               {[
-                { icon: <Instagram className="w-5 h-5" />, href: 'https://instagram.com/wondermayank' },
-                { icon: <Twitter className="w-5 h-5" />, href: 'https://twitter.com/wonder_mayank' },
-                { icon: <Github className="w-5 h-5" />, href: 'https://github.com/wondermayank' },
+                { icon: <Instagram className="w-5 h-5" />, href: 'https://instagram.com/wondermayank', label: 'Instagram @wondermayank' },
+                { icon: <Twitter className="w-5 h-5" />, href: 'https://x.com/wondermayankx', label: 'X (Twitter) @wondermayankx' },
+                { icon: <Github className="w-5 h-5" />, href: 'https://github.com/wondermayank', label: 'GitHub @wondermayank' },
               ].map((social, i) => (
                 <a
                   key={i}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={social.label}
                   className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#0C0C0C]/60 hover:text-[#c084fc] hover:border-purple-200 hover:scale-105 transition-all duration-200"
                 >
                   {social.icon}

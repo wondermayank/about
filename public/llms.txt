@@ -1,12 +1,12 @@
 # Wondermayank - Creator Portfolio & Ecosystem
 
-> Official developer, designer, and creator portfolio of Wondermayank (Mayank), accessible at https://about.wondermayank.in
+> Official developer, designer, and creator portfolio of Wondermayank (Mayank), hosted on Cloudflare at https://about.wondermayank.in
 
 ## About Wondermayank
-Wondermayank (Mayank) is an independent Indian full-stack software developer, 3D web creator, and educator who designs and builds high-performance web applications, educational platforms, and creative web experiments.
+Wondermayank (Mayank, known on X as @wondermayankx) is an independent Indian full-stack software developer, 3D web creator, and educator who designs and builds high-performance web applications, educational platforms, and creative web experiments.
 
 ## Core Platforms & Ecosystem Links
-- **About / Portfolio**: [about.wondermayank.in](https://about.wondermayank.in/) - 3D interactive portfolio, creative journey, and platform hub.
+- **About / Portfolio**: [about.wondermayank.in](https://about.wondermayank.in/) - 3D interactive portfolio, creative journey, and platform hub (Hosted on Cloudflare).
 - **Main Website & Contact**: [wondermayank.in](https://wondermayank.in/) | [Contact](https://wondermayank.in/contact.html)
 - **ThunderStudy**: [thunderstudy.indevs.in](https://thunderstudy.indevs.in/) - Open educational hub providing structured study notes, flashcards, and revision guides for Indian exams.
 - **ThunderTest**: [thundertest.indevs.in](https://thundertest.indevs.in/) - CBT (Computer Based Test) examination simulator replicating the official NTA candidate interface for CUET, JEE Main, NEET, SSC, and Banking exams.
@@ -14,8 +14,13 @@ Wondermayank (Mayank) is an independent Indian full-stack software developer, 3D
 - **Paletteify**: [project.wondermayank.in/paletteify/](https://project.wondermayank.in/paletteify/) - High-utility color palette engine with WCAG contrast testing and Tailwind CSS exports.
 - **Periodic Table 3D**: [project.wondermayank.in/Periodic-Table/](https://project.wondermayank.in/Periodic-Table/) - Interactive 3D periodic table of elements with electron orbital visualizations.
 
+## Social & Official Verification
+- **X (Twitter)**: [x.com/wondermayankx](https://x.com/wondermayankx) (@wondermayankx)
+- **GitHub**: [github.com/wondermayank](https://github.com/wondermayank)
+- **Instagram**: [instagram.com/wondermayank](https://instagram.com/wondermayank)
+
 ## Key Specializations & Tech Stack
 - Frontend: React, TypeScript, Vite, Tailwind CSS, Framer Motion
 - 3D & Graphics: Three.js, WebGL, tsparticles, canvas-based shaders
+- Infrastructure: Cloudflare Pages & CDN, SSL/TLS, edge caching, Brotli compression
 - EdTech & CBT: Full-fledged exam simulation engines, scoring algorithms, and question palettes
-- Social & Code: [GitHub](https://github.com/wondermayank) | [Twitter / X](https://twitter.com/wonder_mayank) | [Instagram](https://instagram.com/wondermayank)
