@@ -1,7 +1,9 @@
 {
-  "name": "jack-3d-portfolio",
+  "name": "about-wondermayank",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "About Wondermayank - 3D Portfolio & Ecosystem",
+  "homepage": "https://about.wondermayank.in",
   "type": "module",
   "scripts": {
     "dev": "vite",

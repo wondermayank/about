@@ -186,7 +186,7 @@ function App() {
               {/* Card 1 */}
               <FadeIn delay={0.1} y={30}>
                 <a
-                  href="https://commercesehoga.github.io/dashboard"
+                  href="https://thundertest.indevs.in"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex flex-col justify-between h-[360px] bg-[#F3F8FC] border border-sky-100 rounded-[30px] p-8 hover:bg-[#E0F2FE] hover:border-[#c084fc]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(192,132,252,0.15)] relative overflow-hidden"
@@ -202,7 +202,7 @@ function App() {
                       CBT Mock Test
                     </h3>
                     <span className="text-xs text-[#0C0C0C]/40 uppercase tracking-widest font-semibold block mb-4">
-                      commercesehoga.github.io
+                      thundertest.indevs.in
                     </span>
                     <p className="text-sm text-[#0C0C0C]/60 font-light leading-relaxed">
                       A high-fidelity Computer Based Test engine built for Indian students preparing for CUET, SSC, and Banking exams with interactive real-time scoreboards.
@@ -219,7 +219,7 @@ function App() {
               {/* Card 2 */}
               <FadeIn delay={0.2} y={30}>
                 <a
-                  href="https://thunderstudy.github.io"
+                  href="https://thunderstudy.indevs.in"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex flex-col justify-between h-[360px] bg-[#F3F8FC] border border-sky-100 rounded-[30px] p-8 hover:bg-[#E0F2FE] hover:border-[#d8b4fe]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(216,180,254,0.15)] relative overflow-hidden"
@@ -235,7 +235,7 @@ function App() {
                       Study Material
                     </h3>
                     <span className="text-xs text-[#0C0C0C]/40 uppercase tracking-widest font-semibold block mb-4">
-                      thunderstudy.github.io
+                      thunderstudy.indevs.in
                     </span>
                     <p className="text-sm text-[#0C0C0C]/60 font-light leading-relaxed">
                       An open educational repository providing organized, gamified resources, structured study notes, and lightning-fast revision decks.
@@ -252,7 +252,7 @@ function App() {
               {/* Card 3 */}
               <FadeIn delay={0.3} y={30}>
                 <a
-                  href="https://wondermayank.github.io"
+                  href="https://project.wondermayank.in"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex flex-col justify-between h-[360px] bg-[#F3F8FC] border border-sky-100 rounded-[30px] p-8 hover:bg-[#E0F2FE] hover:border-[#e9d5ff]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(233,213,255,0.15)] relative overflow-hidden"
@@ -268,7 +268,7 @@ function App() {
                       More Projects
                     </h3>
                     <span className="text-xs text-[#0C0C0C]/40 uppercase tracking-widest font-semibold block mb-4">
-                      wondermayank.github.io
+                      project.wondermayank.in
                     </span>
                     <p className="text-sm text-[#0C0C0C]/60 font-light leading-relaxed">
                       Discover interactive anime search modules, experimental web tools, and customizable design sandboxes built with deep creative focus.
@@ -313,14 +313,14 @@ function App() {
           {/* Email CTA button */}
           <FadeIn delay={0.2} y={30} className="mb-16">
             <a
-              href="https://wondermayank.github.io/contact.html"
+              href="https://wondermayank.in/contact.html"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-3 bg-slate-50 border border-slate-200 rounded-full px-8 py-4 sm:px-10 sm:py-5 hover:bg-slate-100 hover:border-slate-300 transition-all duration-300 shadow-xl"
             >
               <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-[#0C0C0C]/80 group-hover:scale-110 transition-transform duration-300" />
               <span className="text-sm sm:text-lg font-medium tracking-wide text-[#0C0C0C] lowercase">
-                wondermayank.github.io/contact.html
+                wondermayank.in/contact.html
               </span>
             </a>
           </FadeIn>
