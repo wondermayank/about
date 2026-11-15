@@ -5,6 +5,9 @@
   "description": "About Wondermayank - 3D Portfolio & Ecosystem",
   "homepage": "https://about.wondermayank.in",
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
