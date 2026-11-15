@@ -61,10 +61,10 @@ export const FAQSection: React.FC = () => {
         <motion.div
           animate={{ y: [-6, 6, -6] }}
           transition={{ repeat: Infinity, duration: 3.4, ease: 'easeInOut' }}
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#F8FAFF] border-2 border-sky-100 flex items-center justify-center shadow-[0_8px_30px_rgba(112,161,252,0.15)] relative overflow-hidden"
         >
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#c084fc]/10 to-transparent" />
-          <HelpCircle className="w-6 h-6 sm:w-7 sm:h-7 text-[#c084fc]" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#70A1FC]/10 to-transparent" />
+          <HelpCircle className="w-6 h-6 sm:w-7 sm:h-7 text-[#70A1FC]" />
         </motion.div>
       </div>
 
@@ -75,7 +75,7 @@ export const FAQSection: React.FC = () => {
         <div className="max-w-4xl mx-auto flex flex-col items-center">
           {/* Section Heading */}
           <FadeIn delay={0.1} y={30} className="text-center mb-14 sm:mb-16">
-            <span className="text-[#c084fc] font-bold text-xs uppercase tracking-widest block mb-2">
+            <span className="text-[#70A1FC] font-bold text-xs uppercase tracking-widest block mb-2">
               Common Questions &amp; Direct Answers
             </span>
             <h2
@@ -94,7 +94,7 @@ export const FAQSection: React.FC = () => {
               return (
                 <FadeIn key={idx} delay={0.1 + idx * 0.05} y={20} className="w-full">
                   <motion.div
-                    className="bg-white border border-slate-100 rounded-[24px] sm:rounded-[28px] overflow-hidden transition-all duration-300 shadow-sm hover:border-[#c084fc]/40"
+                    className="bg-white border border-slate-100 rounded-[24px] sm:rounded-[28px] overflow-hidden transition-all duration-300 shadow-sm hover:border-[#70A1FC]/40"
                   >
                     <button
                       onClick={() => toggleFAQ(idx)}
@@ -107,9 +107,9 @@ export const FAQSection: React.FC = () => {
                       <motion.div
                         animate={{ rotate: isOpen ? 180 : 0 }}
                         transition={{ duration: 0.25, ease: 'easeInOut' }}
-                        className="w-8 h-8 rounded-full bg-[#FAF5FF] flex items-center justify-center shrink-0 border border-purple-100"
+                        className="w-8 h-8 rounded-full bg-[#EEF3FF] flex items-center justify-center shrink-0 border border-sky-100"
                       >
-                        <ChevronDown className="w-4 h-4 text-[#c084fc]" />
+                        <ChevronDown className="w-4 h-4 text-[#70A1FC]" />
                       </motion.div>
                     </button>
 
@@ -130,7 +130,7 @@ export const FAQSection: React.FC = () => {
                                   href={item.link.url}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#c084fc] hover:underline"
+                                  className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#70A1FC] hover:underline"
                                 >
                                   <span>{item.link.text}</span>
                                   <span>&rarr;</span>

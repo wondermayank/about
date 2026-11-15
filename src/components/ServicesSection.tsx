@@ -41,14 +41,14 @@ export const ServicesSection: React.FC = () => {
         <motion.div
           animate={{ y: [-6, 6, -6] }}
           transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white border-2 border-sky-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white border-2 border-sky-100 flex items-center justify-center shadow-[0_8px_30px_rgba(112,161,252,0.15)] relative overflow-hidden"
         >
           {/* Glowing neon core overlay */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#c084fc]/8 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#70A1FC]/10 to-transparent" />
           
           {/* Elegant downward chevron path */}
           <svg
-            className="w-6 h-6 sm:w-7 sm:h-7 text-[#c084fc]"
+            className="w-6 h-6 sm:w-7 sm:h-7 text-[#70A1FC]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -91,7 +91,7 @@ export const ServicesSection: React.FC = () => {
               {/* Stacked Details Right */}
               <div className="flex flex-col gap-2 sm:gap-3 flex-1 transition-transform duration-300 group-hover:translate-x-1">
                 <h3
-                  className="font-bold uppercase text-[#0C0C0C] leading-tight transition-colors duration-200 group-hover:text-[#c084fc]"
+                  className="font-bold uppercase text-[#0C0C0C] leading-tight transition-colors duration-200 group-hover:text-[#70A1FC]"
                   style={{ fontSize: 'clamp(1rem, 2.2vw, 2.1rem)' }}
                 >
                   {service.name}

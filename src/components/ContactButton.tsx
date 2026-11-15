@@ -14,8 +14,8 @@ export const ContactButton: React.FC<ContactButtonProps> = ({ onClick }) => {
       transition={{ duration: 0.2, ease: 'easeOut' }}
       className="rounded-full font-medium uppercase tracking-widest text-white transition-all cursor-pointer relative overflow-hidden select-none"
       style={{
-        background: 'linear-gradient(123deg, #0C0C0C 0%, #c084fc 60%, #ffffff 100%)',
-        boxShadow: '0px 4px 15px rgba(192, 132, 252, 0.3), inset 4px 4px 12px #c084fc',
+        background: 'linear-gradient(123deg, #0C0C0C 0%, #70A1FC 60%, #ffffff 100%)',
+        boxShadow: '0px 4px 15px rgba(112, 161, 252, 0.35), inset 4px 4px 12px #70A1FC',
         outline: '2px solid white',
         outlineOffset: '-3px',
       }}

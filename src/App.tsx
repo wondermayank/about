@@ -59,7 +59,7 @@ function App() {
   };
 
   return (
-    <div className="w-full bg-[#FAF5FF] min-h-screen text-[#D7E2EA] font-sans relative overflow-x-clip">
+    <div className="w-full bg-[#EEF3FF] min-h-screen text-[#D7E2EA] font-sans relative overflow-x-clip">
       {/* Premium Loader Screen */}
       <AnimatePresence>
         {isLoading && (
@@ -85,7 +85,7 @@ function App() {
                   {/* Cube Faces */}
                   {/* Front */}
                   <div
-                    className="absolute inset-0 border border-[#c084fc]/60 bg-[#c084fc]/10 backdrop-blur-[2px] rounded-lg"
+                    className="absolute inset-0 border border-[#70A1FC]/60 bg-[#70A1FC]/10 backdrop-blur-[2px] rounded-lg"
                     style={{ transform: 'translateZ(32px)' }}
                   />
                   {/* Back */}
@@ -175,14 +175,14 @@ function App() {
           <motion.div
             animate={{ y: [-6, 6, -6] }}
             transition={{ repeat: Infinity, duration: 3.6, ease: "easeInOut" }}
-            className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
+            className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#F8FAFF] border-2 border-sky-100 flex items-center justify-center shadow-[0_8px_30px_rgba(112,161,252,0.15)] relative overflow-hidden"
           >
             {/* Glowing neon core overlay */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-[#c084fc]/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-[#70A1FC]/10 to-transparent" />
             
             {/* Grid Launch icon SVG inside */}
             <svg
-              className="w-6 h-6 sm:w-7 sm:h-7 text-[#c084fc]"
+              className="w-6 h-6 sm:w-7 sm:h-7 text-[#70A1FC]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -203,7 +203,7 @@ function App() {
               maxSize={1.2}
               particleDensity={70}
               className="w-full h-full"
-              particleColor="#c084fc"
+              particleColor="#70A1FC"
               speed={0.4}
             />
           </div>
@@ -216,13 +216,13 @@ function App() {
                   href="https://thundertest.indevs.in"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex flex-col justify-between h-[360px] bg-[#F3F8FC] border border-sky-100 rounded-[30px] p-8 hover:bg-[#E0F2FE] hover:border-[#c084fc]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(192,132,252,0.15)] relative overflow-hidden"
+                  className="group flex flex-col justify-between h-[360px] bg-[#F3F8FC] border border-sky-100 rounded-[30px] p-8 hover:bg-[#E0F2FE] hover:border-[#70A1FC]/40 transition-all duration-500 hover:shadow-[0_0_30px_rgba(112,161,252,0.15)] relative overflow-hidden"
                 >
                   {/* Glow effect */}
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#c084fc]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#70A1FC]/20 to-transparent blur-2xl group-hover:scale-150 transition-transform duration-700 pointer-events-none" />
                   
                   <div>
-                    <span className="text-xs uppercase tracking-widest text-[#c084fc] font-bold mb-4 block">
+                    <span className="text-xs uppercase tracking-widest text-[#70A1FC] font-bold mb-4 block">
                       Launch Platform
                     </span>
                     <h3 className="text-2xl sm:text-3xl font-black uppercase text-[#0C0C0C] mb-3 tracking-tight group-hover:text-black transition-colors duration-300">
@@ -236,7 +236,7 @@ function App() {
                     </p>
                   </div>
                   
-                  <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0C0C0C] group-hover:text-[#c084fc] transition-all duration-300 mt-6">
+                  <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0C0C0C] group-hover:text-[#70A1FC] transition-all duration-300 mt-6">
                     <span>Launch Dashboard</span>
                     <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
                   </div>
@@ -302,7 +302,7 @@ function App() {
                     </p>
                   </div>
                   
-                  <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0C0C0C] group-hover:text-[#c084fc] transition-all duration-300 mt-6">
+                  <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#0C0C0C] group-hover:text-[#70A1FC] transition-all duration-300 mt-6">
                     <span>Browse Archive</span>
                     <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
                   </div>
@@ -370,7 +370,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#0C0C0C]/60 hover:text-[#c084fc] hover:border-purple-200 hover:scale-105 transition-all duration-200"
+                  className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center text-[#0C0C0C]/60 hover:text-[#70A1FC] hover:border-sky-200 hover:scale-105 transition-all duration-200"
                 >
                   {social.icon}
                 </a>
@@ -385,7 +385,7 @@ function App() {
             {/* Back to top dynamic button */}
             <button
               onClick={handleScrollToTop}
-              className="group flex items-center gap-2 text-xs sm:text-sm text-[#0C0C0C]/60 hover:text-[#c084fc] tracking-widest uppercase font-semibold cursor-pointer select-none transition-colors duration-200"
+              className="group flex items-center gap-2 text-xs sm:text-sm text-[#0C0C0C]/60 hover:text-[#70A1FC] tracking-widest uppercase font-semibold cursor-pointer select-none transition-colors duration-200"
             >
               <span>Back to top</span>
               <ArrowUp className="w-4 h-4 group-hover:-translate-y-1 transition-transform duration-300" />

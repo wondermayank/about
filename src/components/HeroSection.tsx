@@ -31,7 +31,7 @@ export const HeroSection: React.FC = () => {
           maxSize={1.2}
           particleDensity={80}
           className="w-full h-full"
-          particleColor="#c084fc"
+          particleColor="#70A1FC"
           speed={0.4}
         />
       </div>
@@ -43,7 +43,7 @@ export const HeroSection: React.FC = () => {
               key={link.name}
               href={link.href}
               onClick={(e) => handleScrollTo(e, link.href)}
-              className="text-[#0C0C0C] font-semibold uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:text-[#c084fc] transition-colors duration-200"
+              className="text-[#0C0C0C] font-semibold uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem] hover:text-[#70A1FC] transition-colors duration-200"
             >
               {link.name}
             </a>

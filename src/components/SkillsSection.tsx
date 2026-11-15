@@ -16,7 +16,7 @@ const SKILL_CATEGORIES: SkillCategory[] = [
     title: 'Frontend & 3D Web',
     subtitle: 'Immersive, responsive & hardware-accelerated user experiences',
     icon: Sparkles,
-    badgeColor: '#c084fc',
+    badgeColor: '#70A1FC',
     skills: [
       { name: 'React', tag: 'Core Library', desc: 'Component architecture, custom hooks, and concurrent UI' },
       { name: 'TypeScript', tag: 'Language', desc: 'Strict type safety, enterprise-grade scalability' },
@@ -61,11 +61,11 @@ export const SkillsSection: React.FC = () => {
         <motion.div
           animate={{ y: [-6, 6, -6] }}
           transition={{ repeat: Infinity, duration: 3.5, ease: 'easeInOut' }}
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#FAF8FF] border-2 border-purple-100 flex items-center justify-center shadow-[0_8px_30px_rgba(192,132,252,0.12)] relative overflow-hidden"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#F8FAFF] border-2 border-sky-100 flex items-center justify-center shadow-[0_8px_30px_rgba(112,161,252,0.15)] relative overflow-hidden"
         >
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#c084fc]/10 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#70A1FC]/10 to-transparent" />
           <svg
-            className="w-6 h-6 sm:w-7 sm:h-7 text-[#c084fc]"
+            className="w-6 h-6 sm:w-7 sm:h-7 text-[#70A1FC]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -78,12 +78,12 @@ export const SkillsSection: React.FC = () => {
 
       <section
         id="skills"
-        className="bg-[#FAF5FF] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 w-full relative z-20 border-t border-purple-100/60 overflow-hidden"
+        className="bg-[#EEF3FF] rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] -mt-10 sm:-mt-12 md:-mt-14 px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32 w-full relative z-20 border-t border-sky-100/60 overflow-hidden"
       >
         <div className="max-w-6xl mx-auto flex flex-col items-center">
           {/* Section Heading */}
           <FadeIn delay={0.1} y={30} className="text-center mb-12 sm:mb-16">
-            <span className="text-[#c084fc] font-bold text-xs uppercase tracking-widest block mb-2">
+            <span className="text-[#70A1FC] font-bold text-xs uppercase tracking-widest block mb-2">
               Capabilities &amp; Stack
             </span>
             <h2
@@ -96,7 +96,7 @@ export const SkillsSection: React.FC = () => {
 
           {/* Interactive Category Selector Tabs */}
           <FadeIn delay={0.2} y={20} className="w-full max-w-2xl mb-12">
-            <div className="flex flex-wrap sm:flex-nowrap justify-center gap-3 bg-white p-2 rounded-full border border-purple-100 shadow-sm">
+            <div className="flex flex-wrap sm:flex-nowrap justify-center gap-3 bg-white p-2 rounded-full border border-sky-100 shadow-sm">
               {SKILL_CATEGORIES.map((cat, idx) => {
                 const Icon = cat.icon;
                 const isActive = activeTab === idx;
@@ -110,7 +110,7 @@ export const SkillsSection: React.FC = () => {
                         : 'text-[#0C0C0C]/60 hover:text-[#0C0C0C] hover:bg-slate-50'
                     }`}
                   >
-                    <Icon className={`w-4 h-4 ${isActive ? 'text-[#c084fc]' : 'text-slate-400'}`} />
+                    <Icon className={`w-4 h-4 ${isActive ? 'text-[#70A1FC]' : 'text-slate-400'}`} />
                     <span>{cat.title.split(' ')[0]}</span>
                   </button>
                 );
@@ -132,16 +132,16 @@ export const SkillsSection: React.FC = () => {
                   key={sIdx}
                   whileHover={{ y: -4, scale: 1.01 }}
                   transition={{ duration: 0.2 }}
-                  className="bg-white border border-slate-100 rounded-[28px] p-6 shadow-sm hover:shadow-[0_12px_30px_rgba(192,132,252,0.12)] hover:border-[#c084fc]/40 transition-all duration-300 flex flex-col justify-between group"
+                  className="bg-white border border-slate-100 rounded-[28px] p-6 shadow-sm hover:shadow-[0_12px_30px_rgba(112,161,252,0.15)] hover:border-[#70A1FC]/40 transition-all duration-300 flex flex-col justify-between group"
                 >
                   <div>
                     <div className="flex items-center justify-between gap-3 mb-4">
-                      <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#FAF5FF] border border-purple-100 text-[#c084fc] uppercase tracking-wider">
+                      <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#F8FAFF] border border-sky-100 text-[#70A1FC] uppercase tracking-wider">
                         {skill.tag}
                       </span>
                       <CheckCircle2 className="w-4 h-4 text-emerald-500 opacity-80" />
                     </div>
-                    <h3 className="text-xl font-bold uppercase text-[#0C0C0C] mb-2 tracking-tight group-hover:text-[#c084fc] transition-colors duration-200">
+                    <h3 className="text-xl font-bold uppercase text-[#0C0C0C] mb-2 tracking-tight group-hover:text-[#70A1FC] transition-colors duration-200">
                       {skill.name}
                     </h3>
                     <p className="text-sm text-[#0C0C0C]/65 font-light leading-relaxed">
