@@ -1,0 +1,22 @@
+{
+  "name": "About Wondermayank",
+  "short_name": "Wondermayank",
+  "description": "Official 3D portfolio and profile of Wondermayank - creator of ThunderStudy and ThunderTest CBT Simulator.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF5FF",
+  "theme_color": "#FAF5FF",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/og-image.png",
+      "sizes": "1024x537",
+      "type": "image/png"
+    }
+  ]
+}

@@ -78,6 +78,11 @@ export const HeroSection: React.FC = () => {
           <img
             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnFICxCcbaWh5iSoMWsVKbbsFZlYPAb7Il3Po4UCHKkT7MZ_RD0bBsQlXgjRSI2NZmwUEhhDyMdjhQ0CTfGrlsVURTkjHpthe-vLRnoC3_fabW5Yu2LU4eAu-t1xVssyjZUHCAmuupkHdMbbxgmSRdULgulogiFmemPcMk7hA1OAMx6oF5xFlwvM9DbWR8/s1024/ChatGPT%20Image%20May%2023,%202026,%2003_09_18%20PM.png"
             alt="Wondermayank Portrait"
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
+            width={520}
+            height={520}
             className="w-full h-auto object-contain select-none pointer-events-none rounded-[30px] sm:rounded-[40px]"
             draggable="false"
           />

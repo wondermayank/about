@@ -30,12 +30,14 @@
     <meta name="ICBM" content="20.5937, 78.9629" />
     <meta name="language" content="English" />
 
-    <!-- Mobile & PWA Theme -->
+    <!-- Mobile & PWA Theme (Standards compliant) -->
     <meta name="theme-color" content="#FAF5FF" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0C0C0C" media="(prefers-color-scheme: dark)" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Wondermayank" />
+    <link rel="manifest" href="/manifest.webmanifest" />
 
     <!-- Cloudflare Edge & Core Web Vitals Resource Hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,18 +49,26 @@
     <link rel="dns-prefetch" href="https://cdn-icons-png.flaticon.com" />
     <link rel="dns-prefetch" href="https://static.vecteezy.com" />
 
-    <!-- Open Graph Protocol (Facebook, LinkedIn, Discord, WhatsApp) -->
+    <!-- Preload Hero Image for Instant LCP -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnFICxCcbaWh5iSoMWsVKbbsFZlYPAb7Il3Po4UCHKkT7MZ_RD0bBsQlXgjRSI2NZmwUEhhDyMdjhQ0CTfGrlsVURTkjHpthe-vLRnoC3_fabW5Yu2LU4eAu-t1xVssyjZUHCAmuupkHdMbbxgmSRdULgulogiFmemPcMk7hA1OAMx6oF5xFlwvM9DbWR8/s1024/ChatGPT%20Image%20May%2023,%202026,%2003_09_18%20PM.png"
+      fetchpriority="high"
+    />
+
+    <!-- Open Graph Protocol (Branded Local Image) -->
     <meta property="og:type" content="profile" />
     <meta property="og:site_name" content="wondermayank" />
     <meta property="og:title" content="About Wondermayank | 3D Web Creator, Developer &amp; Founder" />
     <meta property="og:description" content="Discover the creative universe of Wondermayank (@wondermayankx) — building ThunderStudy, ThunderTest CBT mock test engine, and innovative 3D web experiences." />
     <meta property="og:url" content="https://about.wondermayank.in/" />
-    <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnFICxCcbaWh5iSoMWsVKbbsFZlYPAb7Il3Po4UCHKkT7MZ_RD0bBsQlXgjRSI2NZmwUEhhDyMdjhQ0CTfGrlsVURTkjHpthe-vLRnoC3_fabW5Yu2LU4eAu-t1xVssyjZUHCAmuupkHdMbbxgmSRdULgulogiFmemPcMk7hA1OAMx6oF5xFlwvM9DbWR8/s1024/ChatGPT%20Image%20May%2023,%202026,%2003_09_18%20PM.png" />
-    <meta property="og:image:secure_url" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnFICxCcbaWh5iSoMWsVKbbsFZlYPAb7Il3Po4UCHKkT7MZ_RD0bBsQlXgjRSI2NZmwUEhhDyMdjhQ0CTfGrlsVURTkjHpthe-vLRnoC3_fabW5Yu2LU4eAu-t1xVssyjZUHCAmuupkHdMbbxgmSRdULgulogiFmemPcMk7hA1OAMx6oF5xFlwvM9DbWR8/s1024/ChatGPT%20Image%20May%2023,%202026,%2003_09_18%20PM.png" />
+    <meta property="og:image" content="https://about.wondermayank.in/og-image.png" />
+    <meta property="og:image:secure_url" content="https://about.wondermayank.in/og-image.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1024" />
-    <meta property="og:image:height" content="1024" />
-    <meta property="og:image:alt" content="Wondermayank Portrait" />
+    <meta property="og:image:height" content="537" />
+    <meta property="og:image:alt" content="Wondermayank Official Banner" />
     <meta property="og:locale" content="en_IN" />
     <meta property="og:locale:alternate" content="en_US" />
     <meta property="profile:first_name" content="Mayank" />
@@ -70,8 +80,8 @@
     <meta name="twitter:creator" content="@wondermayankx" />
     <meta name="twitter:title" content="About Wondermayank | 3D Web Creator, Developer &amp; Founder" />
     <meta name="twitter:description" content="Discover the creative universe of Wondermayank (@wondermayankx) — building ThunderStudy, ThunderTest CBT mock test engine, and innovative 3D web experiences." />
-    <meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnFICxCcbaWh5iSoMWsVKbbsFZlYPAb7Il3Po4UCHKkT7MZ_RD0bBsQlXgjRSI2NZmwUEhhDyMdjhQ0CTfGrlsVURTkjHpthe-vLRnoC3_fabW5Yu2LU4eAu-t1xVssyjZUHCAmuupkHdMbbxgmSRdULgulogiFmemPcMk7hA1OAMx6oF5xFlwvM9DbWR8/s1024/ChatGPT%20Image%20May%2023,%202026,%2003_09_18%20PM.png" />
-    <meta name="twitter:image:alt" content="Wondermayank Portrait" />
+    <meta name="twitter:image" content="https://about.wondermayank.in/og-image.png" />
+    <meta name="twitter:image:alt" content="Wondermayank Official Banner" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -123,9 +133,9 @@
           "url": "https://about.wondermayank.in/",
           "image": {
             "@type": "ImageObject",
-            "@id": "https://about.wondermayank.in/#portrait",
-            "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnFICxCcbaWh5iSoMWsVKbbsFZlYPAb7Il3Po4UCHKkT7MZ_RD0bBsQlXgjRSI2NZmwUEhhDyMdjhQ0CTfGrlsVURTkjHpthe-vLRnoC3_fabW5Yu2LU4eAu-t1xVssyjZUHCAmuupkHdMbbxgmSRdULgulogiFmemPcMk7hA1OAMx6oF5xFlwvM9DbWR8/s1024/ChatGPT%20Image%20May%2023,%202026,%2003_09_18%20PM.png",
-            "caption": "Wondermayank Portrait"
+            "@id": "https://about.wondermayank.in/#banner",
+            "url": "https://about.wondermayank.in/og-image.png",
+            "caption": "Wondermayank Official Banner"
           },
           "jobTitle": "3D Web Creator & Full Stack Developer",
           "description": "Passionate 3D web creator and full stack developer crafting interactive web applications, educational platforms like ThunderStudy and ThunderTest, and creative design tools.",
@@ -295,6 +305,15 @@
         <p>Official portfolio and biography of Wondermayank (Mayank, @wondermayankx on X). Creator of ThunderStudy, ThunderTest CBT Simulator, Paletteify, and 100+ open web experiments.</p>
       </header>
       <main>
+        <section>
+          <h2>Impact &amp; Engineering Footprint</h2>
+          <ul>
+            <li>100+ Public Web Tools &amp; Builds</li>
+            <li>100% Free &amp; Open Educational Access</li>
+            <li>NTA Replica CBT Engine Architecture</li>
+            <li>2018 – Present Active Development</li>
+          </ul>
+        </section>
         <section>
           <h2>Core Platforms</h2>
           <ul>

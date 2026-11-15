@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HeroSection } from './components/HeroSection';
+import { StatsSection } from './components/StatsSection';
 import { MarqueeSection } from './components/MarqueeSection';
 import { AboutSection } from './components/AboutSection';
+import { SkillsSection } from './components/SkillsSection';
 import { ServicesSection } from './components/ServicesSection';
+import { TimelineSection } from './components/TimelineSection';
 import { ProjectsSection } from './components/ProjectsSection';
+import { FAQSection } from './components/FAQSection';
 import { FadeIn } from './components/FadeIn';
 import { Mail, Github, Twitter, Instagram, ArrowUp } from 'lucide-react';
 import { SparklesCore } from './components/ui/sparkles';
@@ -14,19 +18,33 @@ function App() {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    // Increment progress from 0% to 100% over 5000ms (5 seconds)
-    const duration = 5000;
-    const intervalTime = 50; 
+    // Check if user has already visited in this session
+    try {
+      if (sessionStorage.getItem('about_wm_visited')) {
+        setIsLoading(false);
+        return;
+      }
+    } catch {
+      // Ignore storage restrictions
+    }
+
+    // Increment progress from 0% to 100% over 1800ms
+    const duration = 1800;
+    const intervalTime = 30; 
     const increment = 100 / (duration / intervalTime);
 
     const timer = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(timer);
-          // Wait 300ms after reaching 100% for a smooth, cohesive reveal
+          try {
+            sessionStorage.setItem('about_wm_visited', 'true');
+          } catch {
+            // Ignore storage restrictions
+          }
           setTimeout(() => {
             setIsLoading(false);
-          }, 300);
+          }, 200);
           return 100;
         }
         return prev + increment;
@@ -129,16 +147,25 @@ function App() {
       {/* 1. Hero Section */}
       <HeroSection />
 
-      {/* 2. Marquee Section */}
+      {/* 2. Visual Impact & Live Stats Counter */}
+      <StatsSection />
+
+      {/* 3. Marquee Section */}
       <MarqueeSection />
 
-      {/* 3. About Section */}
+      {/* 4. About Section */}
       <AboutSection />
 
-      {/* 4. Services Section */}
+      {/* 5. Tech Stack & Skills Orbit */}
+      <SkillsSection />
+
+      {/* 6. Services Section */}
       <ServicesSection />
 
-      {/* 5. Projects Section */}
+      {/* 7. Milestones & Journey Timeline */}
+      <TimelineSection />
+
+      {/* 8. Projects Section */}
       <ProjectsSection />
 
       {/* Portals & Platforms Section */}
@@ -286,7 +313,10 @@ function App() {
         </section>
       </div>
 
-      {/* 6. Interactive Contact Footer Section */}
+      {/* 10. Interactive FAQ Section (Heavy AEO) */}
+      <FAQSection />
+
+      {/* 11. Interactive Contact Footer Section */}
       <footer
         id="contact"
         className="bg-white pt-24 pb-12 px-6 md:px-10 border-t border-slate-100 w-full relative z-30"
