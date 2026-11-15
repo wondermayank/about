@@ -76,7 +76,7 @@ export const HeroSection: React.FC = () => {
           className="w-full flex justify-center items-end"
         >
           <img
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnFICxCcbaWh5iSoMWsVKbbsFZlYPAb7Il3Po4UCHKkT7MZ_RD0bBsQlXgjRSI2NZmwUEhhDyMdjhQ0CTfGrlsVURTkjHpthe-vLRnoC3_fabW5Yu2LU4eAu-t1xVssyjZUHCAmuupkHdMbbxgmSRdULgulogiFmemPcMk7hA1OAMx6oF5xFlwvM9DbWR8/s1024/ChatGPT%20Image%20May%2023,%202026,%2003_09_18%20PM.png"
+            src="/images/hero-portrait.webp"
             alt="Wondermayank Portrait"
             fetchPriority="high"
             loading="eager"
