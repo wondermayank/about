@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://about.wondermayank.in/sitemap.xml
+
+# LLM & AI Context
+# See https://about.wondermayank.in/llms.txt for AI assistant documentation
